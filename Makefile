@@ -8,7 +8,7 @@ GITHUB_ORG="pactflow"
 PACTICIPANT := "pactflow-truelayer-consumer-dotnet"
 GITHUB_WEBHOOK_UUID := "58ca703f-4006-496b-8099-a0b9f47897da" # When provider sends verification results, send to github to update status check
 PACT_CLI="docker run --rm -v ${PWD}:${PWD} -e PACT_BROKER_BASE_URL -e PACT_BROKER_TOKEN \
-           -v /Users/madhulika.mitra/Documents/truelayer-pactflow-io-chain.pem:/tmp/cacert.pem \
+           -v <PATH_TO_CERT_FILE_ON_HOST>:/tmp/cacert.pem \
            -e SSL_CERT_FILE=/tmp/cacert.pem \
            pactfoundation/pact-cli"
 # Only deploy from main
@@ -33,7 +33,7 @@ ci: test publish_pacts can_i_deploy $(DEPLOY_TARGET)
 	#GIT_COMMIT=`git rev-parse --short HEAD`+`date +%s` \
 	#GIT_BRANCH=`git rev-parse --abbrev-ref HEAD` \
 	#REACT_APP_API_BASE_URL=http://localhost:8080 \
-	
+
 fake_ci:
 	@CI=true \
 	make ci

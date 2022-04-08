@@ -32,8 +32,8 @@ namespace TrueLayer.AcceptanceTests
 
             PactBuilder = new PactBuilder(pactConfig);
 
-            PactBuilder.ServiceConsumer("Consumer")
-                .HasPactWith("Provider");
+            PactBuilder.ServiceConsumer("DotnetSDK")
+                .HasPactWith("PaymentsV3");
 
             MockProviderService = PactBuilder.MockService(MockServerPort);
         }
@@ -56,8 +56,8 @@ namespace TrueLayer.AcceptanceTests
                     var pactPublisher = new PactPublisher(PACT_BROKER_BASEURL,
                         new PactUriOptions(PACT_BROKER_TOKEN));
                     pactPublisher.PublishToBroker(
-                        "../../../../../pacts/consumer-provider.json",
-                        "1.0.2"
+                        "../../../../../pacts/DotnetSDK-PaymentsV3.json",
+                        "1.0.0"
                       , new []{"stage","pactflowTest","updatedModel"}
                     );
 

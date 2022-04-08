@@ -1,267 +1,59 @@
 # TrueLayer.NET
 
-[![NuGet](https://img.shields.io/nuget/v/TrueLayer.Client.svg)](https://www.nuget.org/packages/TrueLayer.Client)
-[![NuGet](https://img.shields.io/nuget/dt/TrueLayer.Client.svg)](https://www.nuget.org/packages/TrueLayer.Client)
-[![License](https://img.shields.io/:license-mit-blue.svg)](https://truelayer.mit-license.org/)
-
-![Build](https://github.com/TrueLayer/truelayer-dotnet/workflows/Build/badge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/TrueLayer/truelayer-dotnet/badge.svg?t=KxNahQ)](https://coveralls.io/github/TrueLayer/truelayer-dotnet)
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=TrueLayer_truelayer-dotnet&metric=alert_status&token=98a2b0e3a6f70e0f4ad81d4a0aa23e04bcb19225)](https://sonarcloud.io/dashboard?id=TrueLayer_truelayer-dotnet)
+The branch is to demonstrate a proof of concept done on contract testing done using pactflow  - with Payment Gateway as Provider and Payment UX (Backend SDK) as consumer.
 
 
+The consumer will run the contract test to generate the pact file which will be shared to the provider via pact broker or locally.
 
-The official [TrueLayer](https://truelayer.com) .NET client provides convenient access to TrueLayer APIs from applications built with .NET.
 
-The library currently supports .NET Standard 2.1, .NET 5.0 and .NET 6.0.
+API Tested - Create Payment to merchant account using HPP
+
+```
+POST /payments
+```
 
 ## Installation
 
-Using the [.NET Core command-line interface (CLI) tools](https://docs.microsoft.com/en-us/dotnet/core/tools/):
+Refer steps [here](https://github.com/TrueLayer/truelayer-dotnet/blob/main/README.md) to set up the project locally
 
-```sh
-dotnet add package TrueLayer.Client
-```
+## Prereqsuites
 
-Using the [NuGet Command Line Interface (CLI)](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference)
+####Without pactbroker
 
-```sh
-nuget install TrueLayer.Client
-```
+1. The test create the pact based on the test in "ConsumerPactTest.cs" under Truelayer.AcceptanceTests
+2. The test emulates the expected behavior against a mock server which is recorded by pact tool to generate the contratc
+3. Comment the pactPublisher method in the "ConsumerPactClassFixture.cs" to stop the publish to pactbroker
+4. After running the test it should generate a local pact file under /pacts
 
-Using the [Package Manager Console](https://docs.microsoft.com/en-us/nuget/tools/package-manager-console):
+####With pactbroker
 
-```powershell
-Install-Package TrueLayer.Client
-```
+1. Get a PactBroker account, so you can access to your local [pactbroker](https://pactflow.io/try-for-free/?utm_source=homepage&utm_content=header) server
+2. Follow the sign up process, and get your base url and access key.
+3. Set the variables PACT_BROKER_BASEURL, PACT_BROKER_TOKEN in your system variable(zshrc/bash) files.
+4. Download the SSL certificates and bundle it as .pem and reference the path to the same at SSL_CERT_FILE variable. This enables publishing contracts.Read [here](https://github.com/pact-foundation/pact-js/issues/203)
+   (Ensure to keep your netscope enabled)
+5. On running the same test pact will be published to the pact broker
 
-From within Visual Studio:
-
-1. Open the Solution Explorer.
-2. Right-click on a project within your solution.
-3. Click on *Manage NuGet Packages...*
-4. Click on the *Browse* tab and search for "TrueLayer".
-5. Click on the `TrueLayer` package, select the appropriate version in the
-   right-tab and click *Install*.
-
-### Pre-release Packages
-
-Pre-release packages can be downloaded from [GitHub Packages](https://github.com/truelayer?tab=packages&repo_name=truelayer-dotnet).
+### Contract Tests -With Pact File
 
 ```
-dotnet add package TrueLayer.Client --prerelease --source https://nuget.pkg.github.com/TrueLayer/index.json
-```
-
-[More information](https://docs.github.com/en/packages/guides/configuring-dotnet-cli-for-use-with-github-packages) on using GitHub packages with .NET.
-
-## Documentation
-
-For a comprehensive list of examples, check out the [API documentation](https://docs.truelayer.com).
-
-## Usage
-
-### Prerequisites
-
-First [sign up](https://console.truelayer.com/) for a developer account. Follow the instructions to set up a new application and obtain your Client ID and Secret. Once the application has been created you must add your application redirected URIs in order to test your integration end-to-end.
-
-Next, generate a signing key pair used to sign API requests.
-
-To generate a private key, run:
-
-```sh
-docker run --rm -v ${PWD}:/out -w /out -it alpine/openssl ecparam -genkey -name secp521r1 -noout -out ec512-private-key.pem
-```
-
-To obtain the public key, run:
-
-```sh
-docker run --rm -v ${PWD}:/out -w /out -it alpine/openssl ec -in ec512-private-key.pem -pubout -out ec512-public-key.pem
-```
-
-Navigate to the Payments settings section of the TrueLayer console and upload your public key. Obtain the Key Id.
-
-### Configure Settings
-
-Add your Client ID, Secret and Signing Key ID to `appsettings.json` or any other supported [configuration provider](https://docs.microsoft.com/en-us/dotnet/core/extensions/configuration).
-
-
-```json
-{
-  "TrueLayer": {
-    "ClientId": "your id",
-    "ClientSecret": "your secret",
-    "UseSandbox": true,
-    "Payments": {
-      "SigningKey": {
-        "KeyId": "85eeb2da-702c-4f4b-bf9a-e98af5fd47c3"
-      }
-    }
-  }
-}
-```
-
-### Initialize TrueLayer.NET
-
-Register the TrueLayer client in `Startup.cs` or `Program.cs` (.NET 6.0):
-
-```c#
-public IConfiguration Configuration { get; }
-
-public void ConfigureServices(IServiceCollection services)
-{
-    services.AddTrueLayer(configuration, options =>
-    {
-        if (options.Payments?.SigningKey != null)
-        {
-            // For demo purposes only. Private key should be stored securely
-            options.Payments.SigningKey.PrivateKey = File.ReadAllText("ec512-private-key.pem");
-        }
-    });
-}
-```
-
-Alternatively you can create a class that implements `IConfigureOptions<TrueLayerOptions>` if you have more complex configuration requirements.
-
-### Make a payment
-
-Inject `ITrueLayerClient` into your classes:
-
-```c#
-public class MyService
-{
-    private readonly ITrueLayerClient _client;
-
-    public MyService(ITrueLayerClient client)
-    {
-        _client = client;
-    }
-
-    public async Task<ActionResult> MakePayment()
-    {
-        var paymentRequest = new CreatePaymentRequest(
-            amountInMinor: amount.ToMinorCurrencyUnit(2),
-            currency: Currencies.GBP,
-            paymentMethod: new PaymentMethod.BankTransfer(
-                new Provider.UserSelected
-                {
-                    Filter = new ProviderFilter
-                    {
-                        ProviderIds = new[] { "mock-payments-gb-redirect" }
-                    }
-                },
-                new Beneficiary.ExternalAccount(
-                    "TrueLayer",
-                    "truelayer-dotnet",
-                    new AccountIdentifier.SortCodeAccountNumber("567890", "12345678")
-                )
-            ),
-            user: new PaymentUserRequest("Jane Doe", "jane.doe@example.com", "0123456789")
-        );
-
-        var apiResponse = await _client.Payments.CreatePayment(
-            paymentRequest,
-            idempotencyKey: Guid.NewGuid().ToString()
-        );
-
-        if (!apiResponse.IsSuccessful)
-        {
-            return HandleFailure(
-                apiResponse.StatusCode,
-                // Includes details of any errors
-                apiResponse.Problem
-            )
-        }
-
-        // Pass the ResourceToken to the TrueLayer Web or Mobile SDK
-
-        // or, redirect to the TrueLayer Hosted Payment Page
-        string hostedPaymentPageUrl = _client.Payments.CreateHostedPaymentPageLink(
-            apiResponse.Data!.Id,
-            apiResponse.Data!.ResourceToken,
-            new Uri("https://redirect.yourdomain.com"));
-
-        return Redirect(hostedPaymentPageUrl);
-    }
-}
-```
-
-For more examples see the [API documentation](https://docs.truelayer.com). Advanced customization options and documentation for contributors can be found in the [Wiki](https://github.com/TrueLayer/truelayer-sdk-net/wiki).
-
-### Make a payout
-
-Inject `ITrueLayerClient` into your classes:
-
-```c#
-public class MyService
-{
-    private readonly ITrueLayerClient _client;
-
-    public MyService(ITrueLayerClient client)
-    {
-        _client = client;
-    }
-
-    public async Task<ActionResult> MakePayout()
-    {
-        var payoutRequest = new CreatePayoutRequest(
-            merchantAccountId: "VALID_MERCHANT_ID",
-            amountInMinor: amount.ToMinorCurrencyUnit(2),
-            currency: Currencies.GBP,
-            beneficiary: new Beneficiary.ExternalAccount(
-                "TrueLayer",
-                "truelayer-dotnet",
-                new SchemeIdentifier.Iban("VALID_IBAN")
-            )
-        );
-
-        var apiResponse = await _client.Payments.CreatePayout(
-            payoutRequest,
-            idempotencyKey: Guid.NewGuid().ToString()
-        );
-
-        if (!apiResponse.IsSuccessful)
-        {
-            return HandleFailure(
-                apiResponse.StatusCode,
-                // Includes details of any errors
-                apiResponse.Problem
-            )
-        }
-
-
-        return Accepted(apiResponse.Data.Id);
-    }
-}
-```
-
-For more examples see the [API documentation](https://docs.truelayer.com). Advanced customization options and documentation for contributors can be found in the [Wiki](https://github.com/TrueLayer/truelayer-sdk-net/wiki).
-
-## Building locally
-
-This project uses [Cake](https://cakebuild.net/) to build, test and publish packages.
-
-Run `build.sh` (Mac/Linux) or `build.ps1` (Windows) To build and test the project.
-
-This will output NuGet packages and coverage reports in the `artifacts` directory.
-
-## Library Documentation
-
-The library API documentation is built using [DocFx](https://dotnet.github.io/docfx/). To build and serve the docs locally run:
+cd test/Truelayer.AcceptanceTests
+dotnet test --filter "TrueLayer.AcceptanceTests.ConsumerPactTests.MakeValidPayment"
 
 ```
-./build.sh --target ServeDocs
+### Contract Tests -With Bidirectional Testing
+
+[Bidirectional Testing](https://pactflow.io/bi-directional-contract-testing/) is a Static Test to compare the consumer pact with the OAS file.
+1. There is a make file at the project root which helps publish the pact 
+2. pactbroker is compulsory for bidirectional testing and the test very closely emulates the example from pact itself
+3. In Makefile the path to SSL certificate needs to be updated <PATH_TO_CERT_FILE_ON_HOST> to your local file path. Refer details here [Using a custom certificate](https://hub.docker.com/r/pactfoundation/pact-cli)
 ```
+make fake_ci
+```
+### References
+1. [pact-net](https://github.com/pact-foundation/pact-net/releases)
+2. [pact-net-git](https://github.com/pact-foundation/pact-net/tree/release/3.x)
+3. [pact-bidirectional-git](https://github.com/pactflow/example-bi-directional-provider-dotnet)
+4. [Documentation](https://docs.pactflow.io)
+5. Setting [pactbroker](https://github.com/pact-foundation/pact_broker) on your own premises
 
-This will serve the docs on http://localhost:8080.
-
-## Contributing
-
-Contributions are always welcome!
-
-See [contributing](contributing.md) for ways to get started.
-
-Please adhere to this project's [code of conduct](CODE_OF_CONDUCT.md).
-
-
-## License
-
-[MIT](LICENSE)
