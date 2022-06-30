@@ -965,15 +965,15 @@ references:
   commentId: T:TrueLayer.Payments.Model.Beneficiary.ExternalAccount
   fullName: TrueLayer.Payments.Model.Beneficiary.ExternalAccount
   nameWithType: Beneficiary.ExternalAccount
-- uid: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor(System.String,System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber})
-  name: ExternalAccount(String, String, OneOf<AccountIdentifier.SortCodeAccountNumber>)
-  href: api/TrueLayer.Payments.Model.Beneficiary.ExternalAccount.html#TrueLayer_Payments_Model_Beneficiary_ExternalAccount__ctor_System_String_System_String_OneOf_TrueLayer_Payments_Model_AccountIdentifier_SortCodeAccountNumber__
-  commentId: M:TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor(System.String,System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber})
-  name.vb: ExternalAccount(String, String, OneOf(Of AccountIdentifier.SortCodeAccountNumber))
-  fullName: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.ExternalAccount(System.String, System.String, OneOf<TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber>)
-  fullName.vb: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.ExternalAccount(System.String, System.String, OneOf(Of TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber))
-  nameWithType: Beneficiary.ExternalAccount.ExternalAccount(String, String, OneOf<AccountIdentifier.SortCodeAccountNumber>)
-  nameWithType.vb: Beneficiary.ExternalAccount.ExternalAccount(String, String, OneOf(Of AccountIdentifier.SortCodeAccountNumber))
+- uid: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor(System.String,System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban})
+  name: ExternalAccount(String, String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban>)
+  href: api/TrueLayer.Payments.Model.Beneficiary.ExternalAccount.html#TrueLayer_Payments_Model_Beneficiary_ExternalAccount__ctor_System_String_System_String_OneOf_TrueLayer_Payments_Model_AccountIdentifier_SortCodeAccountNumber_TrueLayer_Payments_Model_AccountIdentifier_Iban__
+  commentId: M:TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor(System.String,System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban})
+  name.vb: ExternalAccount(String, String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban))
+  fullName: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.ExternalAccount(System.String, System.String, OneOf<TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban>)
+  fullName.vb: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.ExternalAccount(System.String, System.String, OneOf(Of TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban))
+  nameWithType: Beneficiary.ExternalAccount.ExternalAccount(String, String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban>)
+  nameWithType.vb: Beneficiary.ExternalAccount.ExternalAccount(String, String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban))
 - uid: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor*
   name: ExternalAccount
   href: api/TrueLayer.Payments.Model.Beneficiary.ExternalAccount.html#TrueLayer_Payments_Model_Beneficiary_ExternalAccount__ctor_
@@ -1504,15 +1504,15 @@ references:
   commentId: T:TrueLayer.Payments.Model.PaymentMethod.BankTransfer
   fullName: TrueLayer.Payments.Model.PaymentMethod.BankTransfer
   nameWithType: PaymentMethod.BankTransfer
-- uid: TrueLayer.Payments.Model.PaymentMethod.BankTransfer.#ctor(OneOf{TrueLayer.Payments.Model.Provider.UserSelected},OneOf{TrueLayer.Payments.Model.Beneficiary.MerchantAccount,TrueLayer.Payments.Model.Beneficiary.ExternalAccount})
-  name: BankTransfer(OneOf<Provider.UserSelected>, OneOf<Beneficiary.MerchantAccount, Beneficiary.ExternalAccount>)
-  href: api/TrueLayer.Payments.Model.PaymentMethod.BankTransfer.html#TrueLayer_Payments_Model_PaymentMethod_BankTransfer__ctor_OneOf_TrueLayer_Payments_Model_Provider_UserSelected__OneOf_TrueLayer_Payments_Model_Beneficiary_MerchantAccount_TrueLayer_Payments_Model_Beneficiary_ExternalAccount__
-  commentId: M:TrueLayer.Payments.Model.PaymentMethod.BankTransfer.#ctor(OneOf{TrueLayer.Payments.Model.Provider.UserSelected},OneOf{TrueLayer.Payments.Model.Beneficiary.MerchantAccount,TrueLayer.Payments.Model.Beneficiary.ExternalAccount})
-  name.vb: BankTransfer(OneOf(Of Provider.UserSelected), OneOf(Of Beneficiary.MerchantAccount, Beneficiary.ExternalAccount))
-  fullName: TrueLayer.Payments.Model.PaymentMethod.BankTransfer.BankTransfer(OneOf<TrueLayer.Payments.Model.Provider.UserSelected>, OneOf<TrueLayer.Payments.Model.Beneficiary.MerchantAccount, TrueLayer.Payments.Model.Beneficiary.ExternalAccount>)
-  fullName.vb: TrueLayer.Payments.Model.PaymentMethod.BankTransfer.BankTransfer(OneOf(Of TrueLayer.Payments.Model.Provider.UserSelected), OneOf(Of TrueLayer.Payments.Model.Beneficiary.MerchantAccount, TrueLayer.Payments.Model.Beneficiary.ExternalAccount))
-  nameWithType: PaymentMethod.BankTransfer.BankTransfer(OneOf<Provider.UserSelected>, OneOf<Beneficiary.MerchantAccount, Beneficiary.ExternalAccount>)
-  nameWithType.vb: PaymentMethod.BankTransfer.BankTransfer(OneOf(Of Provider.UserSelected), OneOf(Of Beneficiary.MerchantAccount, Beneficiary.ExternalAccount))
+- uid: TrueLayer.Payments.Model.PaymentMethod.BankTransfer.#ctor(OneOf{TrueLayer.Payments.Model.Provider.UserSelected,TrueLayer.Payments.Model.Provider.Preselected},OneOf{TrueLayer.Payments.Model.Beneficiary.MerchantAccount,TrueLayer.Payments.Model.Beneficiary.ExternalAccount})
+  name: BankTransfer(OneOf<Provider.UserSelected, Provider.Preselected>, OneOf<Beneficiary.MerchantAccount, Beneficiary.ExternalAccount>)
+  href: api/TrueLayer.Payments.Model.PaymentMethod.BankTransfer.html#TrueLayer_Payments_Model_PaymentMethod_BankTransfer__ctor_OneOf_TrueLayer_Payments_Model_Provider_UserSelected_TrueLayer_Payments_Model_Provider_Preselected__OneOf_TrueLayer_Payments_Model_Beneficiary_MerchantAccount_TrueLayer_Payments_Model_Beneficiary_ExternalAccount__
+  commentId: M:TrueLayer.Payments.Model.PaymentMethod.BankTransfer.#ctor(OneOf{TrueLayer.Payments.Model.Provider.UserSelected,TrueLayer.Payments.Model.Provider.Preselected},OneOf{TrueLayer.Payments.Model.Beneficiary.MerchantAccount,TrueLayer.Payments.Model.Beneficiary.ExternalAccount})
+  name.vb: BankTransfer(OneOf(Of Provider.UserSelected, Provider.Preselected), OneOf(Of Beneficiary.MerchantAccount, Beneficiary.ExternalAccount))
+  fullName: TrueLayer.Payments.Model.PaymentMethod.BankTransfer.BankTransfer(OneOf<TrueLayer.Payments.Model.Provider.UserSelected, TrueLayer.Payments.Model.Provider.Preselected>, OneOf<TrueLayer.Payments.Model.Beneficiary.MerchantAccount, TrueLayer.Payments.Model.Beneficiary.ExternalAccount>)
+  fullName.vb: TrueLayer.Payments.Model.PaymentMethod.BankTransfer.BankTransfer(OneOf(Of TrueLayer.Payments.Model.Provider.UserSelected, TrueLayer.Payments.Model.Provider.Preselected), OneOf(Of TrueLayer.Payments.Model.Beneficiary.MerchantAccount, TrueLayer.Payments.Model.Beneficiary.ExternalAccount))
+  nameWithType: PaymentMethod.BankTransfer.BankTransfer(OneOf<Provider.UserSelected, Provider.Preselected>, OneOf<Beneficiary.MerchantAccount, Beneficiary.ExternalAccount>)
+  nameWithType.vb: PaymentMethod.BankTransfer.BankTransfer(OneOf(Of Provider.UserSelected, Provider.Preselected), OneOf(Of Beneficiary.MerchantAccount, Beneficiary.ExternalAccount))
 - uid: TrueLayer.Payments.Model.PaymentMethod.BankTransfer.#ctor*
   name: BankTransfer
   href: api/TrueLayer.Payments.Model.PaymentMethod.BankTransfer.html#TrueLayer_Payments_Model_PaymentMethod_BankTransfer__ctor_
@@ -1815,6 +1815,77 @@ references:
   commentId: T:TrueLayer.Payments.Model.Provider
   fullName: TrueLayer.Payments.Model.Provider
   nameWithType: Provider
+- uid: TrueLayer.Payments.Model.Provider.Preselected
+  name: Provider.Preselected
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html
+  commentId: T:TrueLayer.Payments.Model.Provider.Preselected
+  fullName: TrueLayer.Payments.Model.Provider.Preselected
+  nameWithType: Provider.Preselected
+- uid: TrueLayer.Payments.Model.Provider.Preselected.#ctor(System.String,System.String)
+  name: Preselected(String, String)
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected__ctor_System_String_System_String_
+  commentId: M:TrueLayer.Payments.Model.Provider.Preselected.#ctor(System.String,System.String)
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.Preselected(System.String, System.String)
+  nameWithType: Provider.Preselected.Preselected(String, String)
+- uid: TrueLayer.Payments.Model.Provider.Preselected.#ctor*
+  name: Preselected
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected__ctor_
+  commentId: Overload:TrueLayer.Payments.Model.Provider.Preselected.#ctor
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.Preselected
+  nameWithType: Provider.Preselected.Preselected
+- uid: TrueLayer.Payments.Model.Provider.Preselected.ProviderId
+  name: ProviderId
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected_ProviderId
+  commentId: P:TrueLayer.Payments.Model.Provider.Preselected.ProviderId
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.ProviderId
+  nameWithType: Provider.Preselected.ProviderId
+- uid: TrueLayer.Payments.Model.Provider.Preselected.ProviderId*
+  name: ProviderId
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected_ProviderId_
+  commentId: Overload:TrueLayer.Payments.Model.Provider.Preselected.ProviderId
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.ProviderId
+  nameWithType: Provider.Preselected.ProviderId
+- uid: TrueLayer.Payments.Model.Provider.Preselected.Remitter
+  name: Remitter
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected_Remitter
+  commentId: P:TrueLayer.Payments.Model.Provider.Preselected.Remitter
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.Remitter
+  nameWithType: Provider.Preselected.Remitter
+- uid: TrueLayer.Payments.Model.Provider.Preselected.Remitter*
+  name: Remitter
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected_Remitter_
+  commentId: Overload:TrueLayer.Payments.Model.Provider.Preselected.Remitter
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.Remitter
+  nameWithType: Provider.Preselected.Remitter
+- uid: TrueLayer.Payments.Model.Provider.Preselected.SchemeId
+  name: SchemeId
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected_SchemeId
+  commentId: P:TrueLayer.Payments.Model.Provider.Preselected.SchemeId
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.SchemeId
+  nameWithType: Provider.Preselected.SchemeId
+- uid: TrueLayer.Payments.Model.Provider.Preselected.SchemeId*
+  name: SchemeId
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected_SchemeId_
+  commentId: Overload:TrueLayer.Payments.Model.Provider.Preselected.SchemeId
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.SchemeId
+  nameWithType: Provider.Preselected.SchemeId
+- uid: TrueLayer.Payments.Model.Provider.Preselected.Type
+  name: Type
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected_Type
+  commentId: P:TrueLayer.Payments.Model.Provider.Preselected.Type
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.Type
+  nameWithType: Provider.Preselected.Type
+- uid: TrueLayer.Payments.Model.Provider.Preselected.Type*
+  name: Type
+  href: api/TrueLayer.Payments.Model.Provider.Preselected.html#TrueLayer_Payments_Model_Provider_Preselected_Type_
+  commentId: Overload:TrueLayer.Payments.Model.Provider.Preselected.Type
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Provider.Preselected.Type
+  nameWithType: Provider.Preselected.Type
 - uid: TrueLayer.Payments.Model.Provider.UserSelected
   name: Provider.UserSelected
   href: api/TrueLayer.Payments.Model.Provider.UserSelected.html
@@ -1937,6 +2008,54 @@ references:
   isSpec: "True"
   fullName: TrueLayer.Payments.Model.ProviderFilter.ReleaseChannel
   nameWithType: ProviderFilter.ReleaseChannel
+- uid: TrueLayer.Payments.Model.RemitterAccount
+  name: RemitterAccount
+  href: api/TrueLayer.Payments.Model.RemitterAccount.html
+  commentId: T:TrueLayer.Payments.Model.RemitterAccount
+  fullName: TrueLayer.Payments.Model.RemitterAccount
+  nameWithType: RemitterAccount
+- uid: TrueLayer.Payments.Model.RemitterAccount.#ctor(System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban})
+  name: RemitterAccount(String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban>)
+  href: api/TrueLayer.Payments.Model.RemitterAccount.html#TrueLayer_Payments_Model_RemitterAccount__ctor_System_String_OneOf_TrueLayer_Payments_Model_AccountIdentifier_SortCodeAccountNumber_TrueLayer_Payments_Model_AccountIdentifier_Iban__
+  commentId: M:TrueLayer.Payments.Model.RemitterAccount.#ctor(System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban})
+  name.vb: RemitterAccount(String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban))
+  fullName: TrueLayer.Payments.Model.RemitterAccount.RemitterAccount(System.String, OneOf<TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban>)
+  fullName.vb: TrueLayer.Payments.Model.RemitterAccount.RemitterAccount(System.String, OneOf(Of TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban))
+  nameWithType: RemitterAccount.RemitterAccount(String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban>)
+  nameWithType.vb: RemitterAccount.RemitterAccount(String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban))
+- uid: TrueLayer.Payments.Model.RemitterAccount.#ctor*
+  name: RemitterAccount
+  href: api/TrueLayer.Payments.Model.RemitterAccount.html#TrueLayer_Payments_Model_RemitterAccount__ctor_
+  commentId: Overload:TrueLayer.Payments.Model.RemitterAccount.#ctor
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.RemitterAccount.RemitterAccount
+  nameWithType: RemitterAccount.RemitterAccount
+- uid: TrueLayer.Payments.Model.RemitterAccount.AccountHolderName
+  name: AccountHolderName
+  href: api/TrueLayer.Payments.Model.RemitterAccount.html#TrueLayer_Payments_Model_RemitterAccount_AccountHolderName
+  commentId: P:TrueLayer.Payments.Model.RemitterAccount.AccountHolderName
+  fullName: TrueLayer.Payments.Model.RemitterAccount.AccountHolderName
+  nameWithType: RemitterAccount.AccountHolderName
+- uid: TrueLayer.Payments.Model.RemitterAccount.AccountHolderName*
+  name: AccountHolderName
+  href: api/TrueLayer.Payments.Model.RemitterAccount.html#TrueLayer_Payments_Model_RemitterAccount_AccountHolderName_
+  commentId: Overload:TrueLayer.Payments.Model.RemitterAccount.AccountHolderName
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.RemitterAccount.AccountHolderName
+  nameWithType: RemitterAccount.AccountHolderName
+- uid: TrueLayer.Payments.Model.RemitterAccount.AccountIdentifier
+  name: AccountIdentifier
+  href: api/TrueLayer.Payments.Model.RemitterAccount.html#TrueLayer_Payments_Model_RemitterAccount_AccountIdentifier
+  commentId: P:TrueLayer.Payments.Model.RemitterAccount.AccountIdentifier
+  fullName: TrueLayer.Payments.Model.RemitterAccount.AccountIdentifier
+  nameWithType: RemitterAccount.AccountIdentifier
+- uid: TrueLayer.Payments.Model.RemitterAccount.AccountIdentifier*
+  name: AccountIdentifier
+  href: api/TrueLayer.Payments.Model.RemitterAccount.html#TrueLayer_Payments_Model_RemitterAccount_AccountIdentifier_
+  commentId: Overload:TrueLayer.Payments.Model.RemitterAccount.AccountIdentifier
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.RemitterAccount.AccountIdentifier
+  nameWithType: RemitterAccount.AccountIdentifier
 - uid: TrueLayer.Payments.PaymentsOptions
   name: PaymentsOptions
   href: api/TrueLayer.Payments.PaymentsOptions.html
@@ -2493,25 +2612,6 @@ references:
   isSpec: "True"
   fullName: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.SucceededAt
   nameWithType: GetPayoutsResponse.Successful.SucceededAt
-- uid: TrueLayer.Payouts.PayoutsOptions
-  name: PayoutsOptions
-  href: api/TrueLayer.Payouts.PayoutsOptions.html
-  commentId: T:TrueLayer.Payouts.PayoutsOptions
-  fullName: TrueLayer.Payouts.PayoutsOptions
-  nameWithType: PayoutsOptions
-- uid: TrueLayer.Payouts.PayoutsOptions.SigningKey
-  name: SigningKey
-  href: api/TrueLayer.Payouts.PayoutsOptions.html#TrueLayer_Payouts_PayoutsOptions_SigningKey
-  commentId: P:TrueLayer.Payouts.PayoutsOptions.SigningKey
-  fullName: TrueLayer.Payouts.PayoutsOptions.SigningKey
-  nameWithType: PayoutsOptions.SigningKey
-- uid: TrueLayer.Payouts.PayoutsOptions.SigningKey*
-  name: SigningKey
-  href: api/TrueLayer.Payouts.PayoutsOptions.html#TrueLayer_Payouts_PayoutsOptions_SigningKey_
-  commentId: Overload:TrueLayer.Payouts.PayoutsOptions.SigningKey
-  isSpec: "True"
-  fullName: TrueLayer.Payouts.PayoutsOptions.SigningKey
-  nameWithType: PayoutsOptions.SigningKey
 - uid: TrueLayer.ProblemDetails
   name: ProblemDetails
   href: api/TrueLayer.ProblemDetails.html
@@ -2837,19 +2937,6 @@ references:
   isSpec: "True"
   fullName: TrueLayer.TrueLayerOptions.Payments
   nameWithType: TrueLayerOptions.Payments
-- uid: TrueLayer.TrueLayerOptions.Payouts
-  name: Payouts
-  href: api/TrueLayer.TrueLayerOptions.html#TrueLayer_TrueLayerOptions_Payouts
-  commentId: P:TrueLayer.TrueLayerOptions.Payouts
-  fullName: TrueLayer.TrueLayerOptions.Payouts
-  nameWithType: TrueLayerOptions.Payouts
-- uid: TrueLayer.TrueLayerOptions.Payouts*
-  name: Payouts
-  href: api/TrueLayer.TrueLayerOptions.html#TrueLayer_TrueLayerOptions_Payouts_
-  commentId: Overload:TrueLayer.TrueLayerOptions.Payouts
-  isSpec: "True"
-  fullName: TrueLayer.TrueLayerOptions.Payouts
-  nameWithType: TrueLayerOptions.Payouts
 - uid: TrueLayer.TrueLayerOptions.UseSandbox
   name: UseSandbox
   href: api/TrueLayer.TrueLayerOptions.html#TrueLayer_TrueLayerOptions_UseSandbox
