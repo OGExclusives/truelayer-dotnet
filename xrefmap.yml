@@ -1905,6 +1905,32 @@ references:
   isSpec: "True"
   fullName: TrueLayer.Payments.Model.Provider.UserSelected.Filter
   nameWithType: Provider.UserSelected.Filter
+- uid: TrueLayer.Payments.Model.Provider.UserSelected.ProviderId
+  name: ProviderId
+  href: api/TrueLayer.Payments.Model.Provider.UserSelected.html#TrueLayer_Payments_Model_Provider_UserSelected_ProviderId
+  commentId: P:TrueLayer.Payments.Model.Provider.UserSelected.ProviderId
+  fullName: TrueLayer.Payments.Model.Provider.UserSelected.ProviderId
+  nameWithType: Provider.UserSelected.ProviderId
+- uid: TrueLayer.Payments.Model.Provider.UserSelected.ProviderId*
+  name: ProviderId
+  href: api/TrueLayer.Payments.Model.Provider.UserSelected.html#TrueLayer_Payments_Model_Provider_UserSelected_ProviderId_
+  commentId: Overload:TrueLayer.Payments.Model.Provider.UserSelected.ProviderId
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Provider.UserSelected.ProviderId
+  nameWithType: Provider.UserSelected.ProviderId
+- uid: TrueLayer.Payments.Model.Provider.UserSelected.SchemeId
+  name: SchemeId
+  href: api/TrueLayer.Payments.Model.Provider.UserSelected.html#TrueLayer_Payments_Model_Provider_UserSelected_SchemeId
+  commentId: P:TrueLayer.Payments.Model.Provider.UserSelected.SchemeId
+  fullName: TrueLayer.Payments.Model.Provider.UserSelected.SchemeId
+  nameWithType: Provider.UserSelected.SchemeId
+- uid: TrueLayer.Payments.Model.Provider.UserSelected.SchemeId*
+  name: SchemeId
+  href: api/TrueLayer.Payments.Model.Provider.UserSelected.html#TrueLayer_Payments_Model_Provider_UserSelected_SchemeId_
+  commentId: Overload:TrueLayer.Payments.Model.Provider.UserSelected.SchemeId
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Provider.UserSelected.SchemeId
+  nameWithType: Provider.UserSelected.SchemeId
 - uid: TrueLayer.Payments.Model.Provider.UserSelected.Type
   name: Type
   href: api/TrueLayer.Payments.Model.Provider.UserSelected.html#TrueLayer_Payments_Model_Provider_UserSelected_Type
