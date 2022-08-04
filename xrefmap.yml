@@ -423,6 +423,22 @@ references:
   isSpec: "True"
   fullName: TrueLayer.Extensions.UriExtensions.Append
   nameWithType: UriExtensions.Append
+- uid: TrueLayer.Extensions.UriExtensions.ToJson*
+  name: ToJson
+  href: api/TrueLayer.Extensions.UriExtensions.html#TrueLayer_Extensions_UriExtensions_ToJson_
+  commentId: Overload:TrueLayer.Extensions.UriExtensions.ToJson
+  isSpec: "True"
+  fullName: TrueLayer.Extensions.UriExtensions.ToJson
+  nameWithType: UriExtensions.ToJson
+- uid: TrueLayer.Extensions.UriExtensions.ToJson``1(TrueLayer.ApiResponse{``0})
+  name: ToJson<T>(ApiResponse<T>)
+  href: api/TrueLayer.Extensions.UriExtensions.html#TrueLayer_Extensions_UriExtensions_ToJson__1_TrueLayer_ApiResponse___0__
+  commentId: M:TrueLayer.Extensions.UriExtensions.ToJson``1(TrueLayer.ApiResponse{``0})
+  name.vb: ToJson(Of T)(ApiResponse(Of T))
+  fullName: TrueLayer.Extensions.UriExtensions.ToJson<T>(TrueLayer.ApiResponse<T>)
+  fullName.vb: TrueLayer.Extensions.UriExtensions.ToJson(Of T)(TrueLayer.ApiResponse(Of T))
+  nameWithType: UriExtensions.ToJson<T>(ApiResponse<T>)
+  nameWithType.vb: UriExtensions.ToJson(Of T)(ApiResponse(Of T))
 - uid: TrueLayer.ITrueLayerClient
   name: ITrueLayerClient
   href: api/TrueLayer.ITrueLayerClient.html
