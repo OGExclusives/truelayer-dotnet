@@ -721,6 +721,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "obj/api/TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html",
+          "hash": "/1xxPntledz7TWJEEFEq+y8w9f0uShEponNbCdqj/IQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "obj/api/TrueLayer.Payouts.Model.Beneficiary.ExternalAccount.yml",
       "output": {
         ".html": {
@@ -761,7 +773,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TrueLayer.Payouts.Model.CreatePayoutRequest.html",
-          "hash": "oYh48TEqGPL0ov+wcLQFuqVtIbKexfd2Vs6bVAG/XEw="
+          "hash": "oY4ekoACkbkmvPdbZZpLrzcswDhrg0VpygV0qw4nUFg="
         }
       },
       "is_incremental": false,
@@ -857,7 +869,7 @@
       "output": {
         ".html": {
           "relative_path": "api/TrueLayer.Payouts.Model.html",
-          "hash": "Dnq1KKBcaWf58Ea927uQDucHVr1SdlNutFDIoenNn2w="
+          "hash": "csw4IrcwBgfCwQ4mnVqheunXtN5TkoBTmzSGClL0mhE="
         }
       },
       "is_incremental": false,
@@ -977,7 +989,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "XtWgszvef/rZz3Tb0xPvlZj9oG2g9O8XykUasgvhKiA="
+          "hash": "ZlqQARySnG/hnruAQloVR4T7cbGYRn60cHsGllubc58="
         }
       },
       "is_incremental": false,
@@ -1016,7 +1028,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 78,
+          "total_file_count": 79,
           "skipped_file_count": 0
         },
         "ResourceDocumentProcessor": {

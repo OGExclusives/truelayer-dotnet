@@ -2195,6 +2195,51 @@ references:
   commentId: T:TrueLayer.Payouts.Model.Beneficiary
   fullName: TrueLayer.Payouts.Model.Beneficiary
   nameWithType: Beneficiary
+- uid: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount
+  name: Beneficiary.BusinessAccount
+  href: api/TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html
+  commentId: T:TrueLayer.Payouts.Model.Beneficiary.BusinessAccount
+  fullName: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount
+  nameWithType: Beneficiary.BusinessAccount
+- uid: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.#ctor(System.String)
+  name: BusinessAccount(String)
+  href: api/TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html#TrueLayer_Payouts_Model_Beneficiary_BusinessAccount__ctor_System_String_
+  commentId: M:TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.#ctor(System.String)
+  fullName: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.BusinessAccount(System.String)
+  nameWithType: Beneficiary.BusinessAccount.BusinessAccount(String)
+- uid: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.#ctor*
+  name: BusinessAccount
+  href: api/TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html#TrueLayer_Payouts_Model_Beneficiary_BusinessAccount__ctor_
+  commentId: Overload:TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.#ctor
+  isSpec: "True"
+  fullName: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.BusinessAccount
+  nameWithType: Beneficiary.BusinessAccount.BusinessAccount
+- uid: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Reference
+  name: Reference
+  href: api/TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html#TrueLayer_Payouts_Model_Beneficiary_BusinessAccount_Reference
+  commentId: P:TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Reference
+  fullName: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Reference
+  nameWithType: Beneficiary.BusinessAccount.Reference
+- uid: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Reference*
+  name: Reference
+  href: api/TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html#TrueLayer_Payouts_Model_Beneficiary_BusinessAccount_Reference_
+  commentId: Overload:TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Reference
+  isSpec: "True"
+  fullName: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Reference
+  nameWithType: Beneficiary.BusinessAccount.Reference
+- uid: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Type
+  name: Type
+  href: api/TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html#TrueLayer_Payouts_Model_Beneficiary_BusinessAccount_Type
+  commentId: P:TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Type
+  fullName: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Type
+  nameWithType: Beneficiary.BusinessAccount.Type
+- uid: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Type*
+  name: Type
+  href: api/TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html#TrueLayer_Payouts_Model_Beneficiary_BusinessAccount_Type_
+  commentId: Overload:TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Type
+  isSpec: "True"
+  fullName: TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.Type
+  nameWithType: Beneficiary.BusinessAccount.Type
 - uid: TrueLayer.Payouts.Model.Beneficiary.ExternalAccount
   name: Beneficiary.ExternalAccount
   href: api/TrueLayer.Payouts.Model.Beneficiary.ExternalAccount.html
@@ -2346,15 +2391,15 @@ references:
   commentId: T:TrueLayer.Payouts.Model.CreatePayoutRequest
   fullName: TrueLayer.Payouts.Model.CreatePayoutRequest
   nameWithType: CreatePayoutRequest
-- uid: TrueLayer.Payouts.Model.CreatePayoutRequest.#ctor(System.String,System.Int64,System.String,OneOf{TrueLayer.Payouts.Model.Beneficiary.PaymentSource,TrueLayer.Payouts.Model.Beneficiary.ExternalAccount})
-  name: CreatePayoutRequest(String, Int64, String, OneOf<Beneficiary.PaymentSource, Beneficiary.ExternalAccount>)
-  href: api/TrueLayer.Payouts.Model.CreatePayoutRequest.html#TrueLayer_Payouts_Model_CreatePayoutRequest__ctor_System_String_System_Int64_System_String_OneOf_TrueLayer_Payouts_Model_Beneficiary_PaymentSource_TrueLayer_Payouts_Model_Beneficiary_ExternalAccount__
-  commentId: M:TrueLayer.Payouts.Model.CreatePayoutRequest.#ctor(System.String,System.Int64,System.String,OneOf{TrueLayer.Payouts.Model.Beneficiary.PaymentSource,TrueLayer.Payouts.Model.Beneficiary.ExternalAccount})
-  name.vb: CreatePayoutRequest(String, Int64, String, OneOf(Of Beneficiary.PaymentSource, Beneficiary.ExternalAccount))
-  fullName: TrueLayer.Payouts.Model.CreatePayoutRequest.CreatePayoutRequest(System.String, System.Int64, System.String, OneOf<TrueLayer.Payouts.Model.Beneficiary.PaymentSource, TrueLayer.Payouts.Model.Beneficiary.ExternalAccount>)
-  fullName.vb: TrueLayer.Payouts.Model.CreatePayoutRequest.CreatePayoutRequest(System.String, System.Int64, System.String, OneOf(Of TrueLayer.Payouts.Model.Beneficiary.PaymentSource, TrueLayer.Payouts.Model.Beneficiary.ExternalAccount))
-  nameWithType: CreatePayoutRequest.CreatePayoutRequest(String, Int64, String, OneOf<Beneficiary.PaymentSource, Beneficiary.ExternalAccount>)
-  nameWithType.vb: CreatePayoutRequest.CreatePayoutRequest(String, Int64, String, OneOf(Of Beneficiary.PaymentSource, Beneficiary.ExternalAccount))
+- uid: TrueLayer.Payouts.Model.CreatePayoutRequest.#ctor(System.String,System.Int64,System.String,OneOf{TrueLayer.Payouts.Model.Beneficiary.PaymentSource,TrueLayer.Payouts.Model.Beneficiary.ExternalAccount,TrueLayer.Payouts.Model.Beneficiary.BusinessAccount})
+  name: CreatePayoutRequest(String, Int64, String, OneOf<Beneficiary.PaymentSource, Beneficiary.ExternalAccount, Beneficiary.BusinessAccount>)
+  href: api/TrueLayer.Payouts.Model.CreatePayoutRequest.html#TrueLayer_Payouts_Model_CreatePayoutRequest__ctor_System_String_System_Int64_System_String_OneOf_TrueLayer_Payouts_Model_Beneficiary_PaymentSource_TrueLayer_Payouts_Model_Beneficiary_ExternalAccount_TrueLayer_Payouts_Model_Beneficiary_BusinessAccount__
+  commentId: M:TrueLayer.Payouts.Model.CreatePayoutRequest.#ctor(System.String,System.Int64,System.String,OneOf{TrueLayer.Payouts.Model.Beneficiary.PaymentSource,TrueLayer.Payouts.Model.Beneficiary.ExternalAccount,TrueLayer.Payouts.Model.Beneficiary.BusinessAccount})
+  name.vb: CreatePayoutRequest(String, Int64, String, OneOf(Of Beneficiary.PaymentSource, Beneficiary.ExternalAccount, Beneficiary.BusinessAccount))
+  fullName: TrueLayer.Payouts.Model.CreatePayoutRequest.CreatePayoutRequest(System.String, System.Int64, System.String, OneOf<TrueLayer.Payouts.Model.Beneficiary.PaymentSource, TrueLayer.Payouts.Model.Beneficiary.ExternalAccount, TrueLayer.Payouts.Model.Beneficiary.BusinessAccount>)
+  fullName.vb: TrueLayer.Payouts.Model.CreatePayoutRequest.CreatePayoutRequest(System.String, System.Int64, System.String, OneOf(Of TrueLayer.Payouts.Model.Beneficiary.PaymentSource, TrueLayer.Payouts.Model.Beneficiary.ExternalAccount, TrueLayer.Payouts.Model.Beneficiary.BusinessAccount))
+  nameWithType: CreatePayoutRequest.CreatePayoutRequest(String, Int64, String, OneOf<Beneficiary.PaymentSource, Beneficiary.ExternalAccount, Beneficiary.BusinessAccount>)
+  nameWithType.vb: CreatePayoutRequest.CreatePayoutRequest(String, Int64, String, OneOf(Of Beneficiary.PaymentSource, Beneficiary.ExternalAccount, Beneficiary.BusinessAccount))
 - uid: TrueLayer.Payouts.Model.CreatePayoutRequest.#ctor*
   name: CreatePayoutRequest
   href: api/TrueLayer.Payouts.Model.CreatePayoutRequest.html#TrueLayer_Payouts_Model_CreatePayoutRequest__ctor_

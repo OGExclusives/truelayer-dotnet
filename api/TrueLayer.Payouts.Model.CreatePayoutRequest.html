@@ -105,19 +105,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/main/apiSpec/new?filename=TrueLayer_Payouts_Model_CreatePayoutRequest__ctor_System_String_System_Int64_System_String_OneOf_TrueLayer_Payouts_Model_Beneficiary_PaymentSource_TrueLayer_Payouts_Model_Beneficiary_ExternalAccount__.md&amp;value=---%0Auid%3A%20TrueLayer.Payouts.Model.CreatePayoutRequest.%23ctor(System.String%2CSystem.Int64%2CSystem.String%2COneOf%7BTrueLayer.Payouts.Model.Beneficiary.PaymentSource%2CTrueLayer.Payouts.Model.Beneficiary.ExternalAccount%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/main/apiSpec/new?filename=TrueLayer_Payouts_Model_CreatePayoutRequest__ctor_System_String_System_Int64_System_String_OneOf_TrueLayer_Payouts_Model_Beneficiary_PaymentSource_TrueLayer_Payouts_Model_Beneficiary_ExternalAccount_TrueLayer_Payouts_Model_Beneficiary_BusinessAccount__.md&amp;value=---%0Auid%3A%20TrueLayer.Payouts.Model.CreatePayoutRequest.%23ctor(System.String%2CSystem.Int64%2CSystem.String%2COneOf%7BTrueLayer.Payouts.Model.Beneficiary.PaymentSource%2CTrueLayer.Payouts.Model.Beneficiary.ExternalAccount%2CTrueLayer.Payouts.Model.Beneficiary.BusinessAccount%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/main/src/TrueLayer/Payouts/Model/CreatePayoutRequest.cs/#L20">View Source</a>
   </span>
   <a id="TrueLayer_Payouts_Model_CreatePayoutRequest__ctor_" data-uid="TrueLayer.Payouts.Model.CreatePayoutRequest.#ctor*"></a>
-  <h4 id="TrueLayer_Payouts_Model_CreatePayoutRequest__ctor_System_String_System_Int64_System_String_OneOf_TrueLayer_Payouts_Model_Beneficiary_PaymentSource_TrueLayer_Payouts_Model_Beneficiary_ExternalAccount__" data-uid="TrueLayer.Payouts.Model.CreatePayoutRequest.#ctor(System.String,System.Int64,System.String,OneOf{TrueLayer.Payouts.Model.Beneficiary.PaymentSource,TrueLayer.Payouts.Model.Beneficiary.ExternalAccount})">CreatePayoutRequest(String, Int64, String, OneOf&lt;Beneficiary.PaymentSource, Beneficiary.ExternalAccount&gt;)</h4>
+  <h4 id="TrueLayer_Payouts_Model_CreatePayoutRequest__ctor_System_String_System_Int64_System_String_OneOf_TrueLayer_Payouts_Model_Beneficiary_PaymentSource_TrueLayer_Payouts_Model_Beneficiary_ExternalAccount_TrueLayer_Payouts_Model_Beneficiary_BusinessAccount__" data-uid="TrueLayer.Payouts.Model.CreatePayoutRequest.#ctor(System.String,System.Int64,System.String,OneOf{TrueLayer.Payouts.Model.Beneficiary.PaymentSource,TrueLayer.Payouts.Model.Beneficiary.ExternalAccount,TrueLayer.Payouts.Model.Beneficiary.BusinessAccount})">CreatePayoutRequest(String, Int64, String, OneOf&lt;Beneficiary.PaymentSource, Beneficiary.ExternalAccount, Beneficiary.BusinessAccount&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="TrueLayer.Payouts.Model.CreatePayoutRequest.html">CreatePayoutRequest</a></p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public CreatePayoutRequest(string merchantAccountId, long amountInMinor, string currency, OneOf&lt;Beneficiary.PaymentSource, Beneficiary.ExternalAccount&gt; beneficiary)</code></pre>
+    <pre><code class="lang-csharp hljs">public CreatePayoutRequest(string merchantAccountId, long amountInMinor, string currency, OneOf&lt;Beneficiary.PaymentSource, Beneficiary.ExternalAccount, Beneficiary.BusinessAccount&gt; beneficiary)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -148,7 +148,7 @@
 </td>
       </tr>
       <tr>
-        <td><span class="xref">OneOf</span>&lt;<a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.PaymentSource.html">Beneficiary.PaymentSource</a>, <a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.ExternalAccount.html">Beneficiary.ExternalAccount</a>&gt;</td>
+        <td><span class="xref">OneOf</span>&lt;<a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.PaymentSource.html">Beneficiary.PaymentSource</a>, <a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.ExternalAccount.html">Beneficiary.ExternalAccount</a>, <a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html">Beneficiary.BusinessAccount</a>&gt;</td>
         <td><span class="parametername">beneficiary</span></td>
         <td><p>The payout beneficiary details</p>
 </td>
@@ -202,7 +202,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public OneOf&lt;Beneficiary.PaymentSource, Beneficiary.ExternalAccount&gt; Beneficiary { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">public OneOf&lt;Beneficiary.PaymentSource, Beneficiary.ExternalAccount, Beneficiary.BusinessAccount&gt; Beneficiary { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -214,7 +214,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">OneOf</span>&lt;<a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.PaymentSource.html">Beneficiary.PaymentSource</a>, <a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.ExternalAccount.html">Beneficiary.ExternalAccount</a>&gt;</td>
+        <td><span class="xref">OneOf</span>&lt;<a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.PaymentSource.html">Beneficiary.PaymentSource</a>, <a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.ExternalAccount.html">Beneficiary.ExternalAccount</a>, <a class="xref" href="TrueLayer.Payouts.Model.Beneficiary.BusinessAccount.html">Beneficiary.BusinessAccount</a>&gt;</td>
         <td></td>
       </tr>
     </tbody>
