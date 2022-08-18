@@ -2625,38 +2625,6 @@ references:
   commentId: T:TrueLayer.Payouts.Model.GetPayoutsResponse.Pending
   fullName: TrueLayer.Payouts.Model.GetPayoutsResponse.Pending
   nameWithType: GetPayoutsResponse.Pending
-- uid: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful
-  name: GetPayoutsResponse.Successful
-  href: api/TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.html
-  commentId: T:TrueLayer.Payouts.Model.GetPayoutsResponse.Successful
-  fullName: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful
-  nameWithType: GetPayoutsResponse.Successful
-- uid: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.#ctor(DateTime)
-  name: Successful(DateTime)
-  href: api/TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.html#TrueLayer_Payouts_Model_GetPayoutsResponse_Successful__ctor_DateTime_
-  commentId: M:TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.#ctor(DateTime)
-  fullName: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.Successful(DateTime)
-  nameWithType: GetPayoutsResponse.Successful.Successful(DateTime)
-- uid: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.#ctor*
-  name: Successful
-  href: api/TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.html#TrueLayer_Payouts_Model_GetPayoutsResponse_Successful__ctor_
-  commentId: Overload:TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.#ctor
-  isSpec: "True"
-  fullName: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.Successful
-  nameWithType: GetPayoutsResponse.Successful.Successful
-- uid: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.SucceededAt
-  name: SucceededAt
-  href: api/TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.html#TrueLayer_Payouts_Model_GetPayoutsResponse_Successful_SucceededAt
-  commentId: P:TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.SucceededAt
-  fullName: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.SucceededAt
-  nameWithType: GetPayoutsResponse.Successful.SucceededAt
-- uid: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.SucceededAt*
-  name: SucceededAt
-  href: api/TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.html#TrueLayer_Payouts_Model_GetPayoutsResponse_Successful_SucceededAt_
-  commentId: Overload:TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.SucceededAt
-  isSpec: "True"
-  fullName: TrueLayer.Payouts.Model.GetPayoutsResponse.Successful.SucceededAt
-  nameWithType: GetPayoutsResponse.Successful.SucceededAt
 - uid: TrueLayer.ProblemDetails
   name: ProblemDetails
   href: api/TrueLayer.ProblemDetails.html
