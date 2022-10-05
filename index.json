@@ -77,7 +77,7 @@
   "api/TrueLayer.ITrueLayerClient.html": {
     "href": "api/TrueLayer.ITrueLayerClient.html",
     "title": "Interface ITrueLayerClient | TrueLayer.NET Documentation",
-    "keywords": "Interface ITrueLayerClient Provides access to TrueLayer APIs Namespace : TrueLayer Assembly : TrueLayer.Client.dll Syntax public interface ITrueLayerClient Properties | Improve this Doc View Source Auth Gets the Authorization API resource Declaration IAuthApi Auth { get; } Property Value Type Description IAuthApi | Improve this Doc View Source MerchantAccounts Gets the Merchant Accounts API resource Declaration IMerchantAccountsApi MerchantAccounts { get; } Property Value Type Description IMerchantAccountsApi | Improve this Doc View Source Payments Gets the Payments API resource Declaration IPaymentsApi Payments { get; } Property Value Type Description IPaymentsApi | Improve this Doc View Source Payouts Gets the Payouts API resource Declaration IPayoutsApi Payouts { get; } Property Value Type Description IPayoutsApi"
+    "keywords": "Interface ITrueLayerClient Provides access to TrueLayer APIs Namespace : TrueLayer Assembly : TrueLayer.Client.dll Syntax public interface ITrueLayerClient Properties | Improve this Doc View Source Auth Gets the Authorization API resource Declaration IAuthApi Auth { get; } Property Value Type Description IAuthApi | Improve this Doc View Source MerchantAccounts Gets the Merchant Accounts API resource Declaration IMerchantAccountsApi MerchantAccounts { get; } Property Value Type Description IMerchantAccountsApi | Improve this Doc View Source Payments Gets the Payments API resource Declaration IPaymentsApi Payments { get; } Property Value Type Description IPaymentsApi | Improve this Doc View Source PaymentsProviders Gets the Payments Providers API resource Declaration IPaymentsProvidersApi PaymentsProviders { get; } Property Value Type Description IPaymentsProvidersApi | Improve this Doc View Source Payouts Gets the Payouts API resource Declaration IPayoutsApi Payouts { get; } Property Value Type Description IPayoutsApi"
   },
   "api/TrueLayer.MerchantAccounts.html": {
     "href": "api/TrueLayer.MerchantAccounts.html",
@@ -273,6 +273,61 @@
     "href": "api/TrueLayer.Payments.PaymentsOptions.html",
     "title": "Class PaymentsOptions | TrueLayer.NET Documentation",
     "keywords": "Class PaymentsOptions Options for the TrueLayer Payments API Inheritance Object ApiOptions PaymentsOptions Inherited Members ApiOptions.Uri Namespace : TrueLayer.Payments Assembly : TrueLayer.Client.dll Syntax public class PaymentsOptions : ApiOptions Properties | Improve this Doc View Source HppUri Gets or sets the Hosted Payment Page URI. Defaults to Sandbox or Live depending on the value of UseSandbox Declaration public Uri? HppUri { get; set; } Property Value Type Description Nullable < Uri > | Improve this Doc View Source SigningKey Gets or sets the public key used to sign outgoing payment requests Declaration public SigningKey SigningKey { get; set; } Property Value Type Description SigningKey"
+  },
+  "api/TrueLayer.PaymentsProviders.html": {
+    "href": "api/TrueLayer.PaymentsProviders.html",
+    "title": "Namespace TrueLayer.PaymentsProviders | TrueLayer.NET Documentation",
+    "keywords": "Namespace TrueLayer.PaymentsProviders Interfaces IPaymentsProvidersApi Provides access to the TrueLayer Payments Providers API"
+  },
+  "api/TrueLayer.PaymentsProviders.IPaymentsProvidersApi.html": {
+    "href": "api/TrueLayer.PaymentsProviders.IPaymentsProvidersApi.html",
+    "title": "Interface IPaymentsProvidersApi | TrueLayer.NET Documentation",
+    "keywords": "Interface IPaymentsProvidersApi Provides access to the TrueLayer Payments Providers API Namespace : TrueLayer.PaymentsProviders Assembly : TrueLayer.Client.dll Syntax public interface IPaymentsProvidersApi Methods | Improve this Doc View Source GetPaymentsProvider(String) Gets the details of a payments provider Declaration Task<ApiResponse<PaymentsProvider>> GetPaymentsProvider(string id) Parameters Type Name Description String id The provider identifier Returns Type Description Task < ApiResponse < PaymentsProvider >> An API response that includes the payments provider details if successful, otherwise problem details"
+  },
+  "api/TrueLayer.PaymentsProviders.Model.BankTransferCapabilities.html": {
+    "href": "api/TrueLayer.PaymentsProviders.Model.BankTransferCapabilities.html",
+    "title": "Class BankTransferCapabilities | TrueLayer.NET Documentation",
+    "keywords": "Class BankTransferCapabilities Inheritance Object BankTransferCapabilities Implements IEquatable < BankTransferCapabilities > Namespace : TrueLayer.PaymentsProviders.Model Assembly : TrueLayer.Client.dll Syntax public class BankTransferCapabilities : object, IEquatable<BankTransferCapabilities> Constructors | Improve this Doc View Source BankTransferCapabilities(String, IEnumerable<Scheme>) Declaration public BankTransferCapabilities(string ReleaseChannel, IEnumerable<Scheme> Schemes) Parameters Type Name Description String ReleaseChannel IEnumerable < Scheme > Schemes Properties | Improve this Doc View Source ReleaseChannel Declaration public string ReleaseChannel { get; set; } Property Value Type Description String | Improve this Doc View Source Schemes Declaration public IEnumerable<Scheme> Schemes { get; set; } Property Value Type Description IEnumerable < Scheme > Implements System.IEquatable<T>"
+  },
+  "api/TrueLayer.PaymentsProviders.Model.Capabilities.html": {
+    "href": "api/TrueLayer.PaymentsProviders.Model.Capabilities.html",
+    "title": "Class Capabilities | TrueLayer.NET Documentation",
+    "keywords": "Class Capabilities Inheritance Object Capabilities Implements IEquatable < Capabilities > Namespace : TrueLayer.PaymentsProviders.Model Assembly : TrueLayer.Client.dll Syntax public class Capabilities : object, IEquatable<Capabilities> Constructors | Improve this Doc View Source Capabilities(PaymentsCapabilities, MandatesCapabilities) Declaration public Capabilities(PaymentsCapabilities Payments, MandatesCapabilities Mandates) Parameters Type Name Description PaymentsCapabilities Payments MandatesCapabilities Mandates Properties | Improve this Doc View Source Mandates Declaration public MandatesCapabilities Mandates { get; set; } Property Value Type Description MandatesCapabilities | Improve this Doc View Source Payments Declaration public PaymentsCapabilities Payments { get; set; } Property Value Type Description PaymentsCapabilities Implements System.IEquatable<T>"
+  },
+  "api/TrueLayer.PaymentsProviders.Model.html": {
+    "href": "api/TrueLayer.PaymentsProviders.Model.html",
+    "title": "Namespace TrueLayer.PaymentsProviders.Model | TrueLayer.NET Documentation",
+    "keywords": "Namespace TrueLayer.PaymentsProviders.Model Classes BankTransferCapabilities Capabilities MandatesCapabilities PaymentsCapabilities PaymentsProvider Represents a payments provider Scheme Represents a payments scheme VrpCommercialCapabilities VrpSweepingCapabilities"
+  },
+  "api/TrueLayer.PaymentsProviders.Model.MandatesCapabilities.html": {
+    "href": "api/TrueLayer.PaymentsProviders.Model.MandatesCapabilities.html",
+    "title": "Class MandatesCapabilities | TrueLayer.NET Documentation",
+    "keywords": "Class MandatesCapabilities Inheritance Object MandatesCapabilities Implements IEquatable < MandatesCapabilities > Namespace : TrueLayer.PaymentsProviders.Model Assembly : TrueLayer.Client.dll Syntax public class MandatesCapabilities : object, IEquatable<MandatesCapabilities> Constructors | Improve this Doc View Source MandatesCapabilities(VrpSweepingCapabilities, VrpCommercialCapabilities) Declaration public MandatesCapabilities(VrpSweepingCapabilities VrpSweeping, VrpCommercialCapabilities VrpCommercial) Parameters Type Name Description VrpSweepingCapabilities VrpSweeping VrpCommercialCapabilities VrpCommercial Properties | Improve this Doc View Source VrpCommercial Declaration public VrpCommercialCapabilities VrpCommercial { get; set; } Property Value Type Description VrpCommercialCapabilities | Improve this Doc View Source VrpSweeping Declaration public VrpSweepingCapabilities VrpSweeping { get; set; } Property Value Type Description VrpSweepingCapabilities Implements System.IEquatable<T>"
+  },
+  "api/TrueLayer.PaymentsProviders.Model.PaymentsCapabilities.html": {
+    "href": "api/TrueLayer.PaymentsProviders.Model.PaymentsCapabilities.html",
+    "title": "Class PaymentsCapabilities | TrueLayer.NET Documentation",
+    "keywords": "Class PaymentsCapabilities Inheritance Object PaymentsCapabilities Implements IEquatable < PaymentsCapabilities > Namespace : TrueLayer.PaymentsProviders.Model Assembly : TrueLayer.Client.dll Syntax public class PaymentsCapabilities : object, IEquatable<PaymentsCapabilities> Constructors | Improve this Doc View Source PaymentsCapabilities(BankTransferCapabilities) Declaration public PaymentsCapabilities(BankTransferCapabilities BankTransfer) Parameters Type Name Description BankTransferCapabilities BankTransfer Properties | Improve this Doc View Source BankTransfer Declaration public BankTransferCapabilities BankTransfer { get; set; } Property Value Type Description BankTransferCapabilities Implements System.IEquatable<T>"
+  },
+  "api/TrueLayer.PaymentsProviders.Model.PaymentsProvider.html": {
+    "href": "api/TrueLayer.PaymentsProviders.Model.PaymentsProvider.html",
+    "title": "Class PaymentsProvider | TrueLayer.NET Documentation",
+    "keywords": "Class PaymentsProvider Represents a payments provider Inheritance Object PaymentsProvider Implements IEquatable < PaymentsProvider > Namespace : TrueLayer.PaymentsProviders.Model Assembly : TrueLayer.Client.dll Syntax public class PaymentsProvider : object, IEquatable<PaymentsProvider> Constructors | Improve this Doc View Source PaymentsProvider(String, Capabilities, Nullable<String>, Nullable<String>, Nullable<String>, Nullable<String>, Nullable<String>) Represents a payments provider Declaration public PaymentsProvider(string Id, Capabilities Capabilities, string? DisplayName = null, string? IconUri = null, string? LogoUri = null, string? BgColor = null, string? CountryCode = null) Parameters Type Name Description String Id Capabilities Capabilities Nullable < String > DisplayName Nullable < String > IconUri Nullable < String > LogoUri Nullable < String > BgColor Nullable < String > CountryCode Properties | Improve this Doc View Source BgColor Declaration public string? BgColor { get; set; } Property Value Type Description Nullable < String > | Improve this Doc View Source Capabilities Declaration public Capabilities Capabilities { get; set; } Property Value Type Description Capabilities | Improve this Doc View Source CountryCode Declaration public string? CountryCode { get; set; } Property Value Type Description Nullable < String > | Improve this Doc View Source DisplayName Declaration public string? DisplayName { get; set; } Property Value Type Description Nullable < String > | Improve this Doc View Source IconUri Declaration public string? IconUri { get; set; } Property Value Type Description Nullable < String > | Improve this Doc View Source Id Declaration public string Id { get; set; } Property Value Type Description String | Improve this Doc View Source LogoUri Declaration public string? LogoUri { get; set; } Property Value Type Description Nullable < String > Implements System.IEquatable<T>"
+  },
+  "api/TrueLayer.PaymentsProviders.Model.Scheme.html": {
+    "href": "api/TrueLayer.PaymentsProviders.Model.Scheme.html",
+    "title": "Class Scheme | TrueLayer.NET Documentation",
+    "keywords": "Class Scheme Represents a payments scheme Inheritance Object Scheme Implements IEquatable < Scheme > Namespace : TrueLayer.PaymentsProviders.Model Assembly : TrueLayer.Client.dll Syntax public class Scheme : object, IEquatable<Scheme> Constructors | Improve this Doc View Source Scheme(String) Represents a payments scheme Declaration public Scheme(string Id) Parameters Type Name Description String Id Properties | Improve this Doc View Source Id Declaration public string Id { get; set; } Property Value Type Description String Implements System.IEquatable<T>"
+  },
+  "api/TrueLayer.PaymentsProviders.Model.VrpCommercialCapabilities.html": {
+    "href": "api/TrueLayer.PaymentsProviders.Model.VrpCommercialCapabilities.html",
+    "title": "Class VrpCommercialCapabilities | TrueLayer.NET Documentation",
+    "keywords": "Class VrpCommercialCapabilities Inheritance Object VrpCommercialCapabilities Implements IEquatable < VrpCommercialCapabilities > Namespace : TrueLayer.PaymentsProviders.Model Assembly : TrueLayer.Client.dll Syntax public class VrpCommercialCapabilities : object, IEquatable<VrpCommercialCapabilities> Constructors | Improve this Doc View Source VrpCommercialCapabilities(String) Declaration public VrpCommercialCapabilities(string ReleaseChannel) Parameters Type Name Description String ReleaseChannel Properties | Improve this Doc View Source ReleaseChannel Declaration public string ReleaseChannel { get; set; } Property Value Type Description String Implements System.IEquatable<T>"
+  },
+  "api/TrueLayer.PaymentsProviders.Model.VrpSweepingCapabilities.html": {
+    "href": "api/TrueLayer.PaymentsProviders.Model.VrpSweepingCapabilities.html",
+    "title": "Class VrpSweepingCapabilities | TrueLayer.NET Documentation",
+    "keywords": "Class VrpSweepingCapabilities Inheritance Object VrpSweepingCapabilities Implements IEquatable < VrpSweepingCapabilities > Namespace : TrueLayer.PaymentsProviders.Model Assembly : TrueLayer.Client.dll Syntax public class VrpSweepingCapabilities : object, IEquatable<VrpSweepingCapabilities> Constructors | Improve this Doc View Source VrpSweepingCapabilities(String) Declaration public VrpSweepingCapabilities(string ReleaseChannel) Parameters Type Name Description String ReleaseChannel Properties | Improve this Doc View Source ReleaseChannel Declaration public string ReleaseChannel { get; set; } Property Value Type Description String Implements System.IEquatable<T>"
   },
   "api/TrueLayer.Payouts.html": {
     "href": "api/TrueLayer.Payouts.html",

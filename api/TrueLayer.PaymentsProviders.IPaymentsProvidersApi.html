@@ -4,10 +4,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class PaymentsOptions
+    <title>Interface IPaymentsProvidersApi
    | TrueLayer.NET Documentation </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class PaymentsOptions
+    <meta name="title" content="Interface IPaymentsProvidersApi
    | TrueLayer.NET Documentation ">
     <meta name="generator" content="docfx 2.58.9.0">
     
@@ -78,82 +78,57 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="TrueLayer.Payments.PaymentsOptions">
+            <article class="content wrap" id="_content" data-uid="TrueLayer.PaymentsProviders.IPaymentsProvidersApi">
   
   
-  <h1 id="TrueLayer_Payments_PaymentsOptions" data-uid="TrueLayer.Payments.PaymentsOptions" class="text-break">Class PaymentsOptions
+  <h1 id="TrueLayer_PaymentsProviders_IPaymentsProvidersApi" data-uid="TrueLayer.PaymentsProviders.IPaymentsProvidersApi" class="text-break">Interface IPaymentsProvidersApi
   </h1>
-  <div class="markdown level0 summary"><p>Options for the TrueLayer Payments API</p>
+  <div class="markdown level0 summary"><p>Provides access to the TrueLayer Payments Providers API</p>
 </div>
   <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="TrueLayer.ApiOptions.html">ApiOptions</a></div>
-    <div class="level2"><span class="xref">PaymentsOptions</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="TrueLayer.ApiOptions.html#TrueLayer_ApiOptions_Uri">ApiOptions.Uri</a>
-    </div>
-  </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="TrueLayer.Payments.html">TrueLayer.Payments</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TrueLayer.PaymentsProviders.html">TrueLayer.PaymentsProviders</a></h6>
   <h6><strong>Assembly</strong>: TrueLayer.Client.dll</h6>
-  <h5 id="TrueLayer_Payments_PaymentsOptions_syntax">Syntax</h5>
+  <h5 id="TrueLayer_PaymentsProviders_IPaymentsProvidersApi_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class PaymentsOptions : ApiOptions</code></pre>
+    <pre><code class="lang-csharp hljs">public interface IPaymentsProvidersApi</code></pre>
   </div>
-  <h3 id="properties">Properties
+  <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/apiSpec/new?filename=TrueLayer_Payments_PaymentsOptions_HppUri.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.PaymentsOptions.HppUri%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/apiSpec/new?filename=TrueLayer_PaymentsProviders_IPaymentsProvidersApi_GetPaymentsProvider_System_String_.md&amp;value=---%0Auid%3A%20TrueLayer.PaymentsProviders.IPaymentsProvidersApi.GetPaymentsProvider(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/src/TrueLayer/Payments/PaymentsOptions.cs/#L19">View Source</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/src/TrueLayer/PaymentsProviders/IPaymentsProvidersApi.cs/#L16">View Source</a>
   </span>
-  <a id="TrueLayer_Payments_PaymentsOptions_HppUri_" data-uid="TrueLayer.Payments.PaymentsOptions.HppUri*"></a>
-  <h4 id="TrueLayer_Payments_PaymentsOptions_HppUri" data-uid="TrueLayer.Payments.PaymentsOptions.HppUri">HppUri</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the Hosted Payment Page URI. Defaults to Sandbox or Live depending on the value of <a class="xref" href="TrueLayer.TrueLayerOptions.html#TrueLayer_TrueLayerOptions_UseSandbox">UseSandbox</a></p>
+  <a id="TrueLayer_PaymentsProviders_IPaymentsProvidersApi_GetPaymentsProvider_" data-uid="TrueLayer.PaymentsProviders.IPaymentsProvidersApi.GetPaymentsProvider*"></a>
+  <h4 id="TrueLayer_PaymentsProviders_IPaymentsProvidersApi_GetPaymentsProvider_System_String_" data-uid="TrueLayer.PaymentsProviders.IPaymentsProvidersApi.GetPaymentsProvider(System.String)">GetPaymentsProvider(String)</h4>
+  <div class="markdown level1 summary"><p>Gets the details of a payments provider</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Uri? HppUri { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">Task&lt;ApiResponse&lt;PaymentsProvider&gt;&gt; GetPaymentsProvider(string id)</code></pre>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">Uri</span>&gt;</td>
-        <td></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>The provider identifier</p>
+</td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/apiSpec/new?filename=TrueLayer_Payments_PaymentsOptions_SigningKey.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.PaymentsOptions.SigningKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/src/TrueLayer/Payments/PaymentsOptions.cs/#L14">View Source</a>
-  </span>
-  <a id="TrueLayer_Payments_PaymentsOptions_SigningKey_" data-uid="TrueLayer.Payments.PaymentsOptions.SigningKey*"></a>
-  <h4 id="TrueLayer_Payments_PaymentsOptions_SigningKey" data-uid="TrueLayer.Payments.PaymentsOptions.SigningKey">SigningKey</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the public key used to sign outgoing payment requests</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public SigningKey SigningKey { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -163,8 +138,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="TrueLayer.SigningKey.html">SigningKey</a></td>
-        <td></td>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="TrueLayer.ApiResponse-1.html">ApiResponse</a>&lt;<a class="xref" href="TrueLayer.PaymentsProviders.Model.PaymentsProvider.html">PaymentsProvider</a>&gt;&gt;</td>
+        <td><p>An API response that includes the payments provider details if successful, otherwise problem details</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -176,10 +152,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/apiSpec/new?filename=TrueLayer_Payments_PaymentsOptions.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.PaymentsOptions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/apiSpec/new?filename=TrueLayer_PaymentsProviders_IPaymentsProvidersApi.md&amp;value=---%0Auid%3A%20TrueLayer.PaymentsProviders.IPaymentsProvidersApi%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/src/TrueLayer/Payments/PaymentsOptions.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/d8a537b5af58cf4156a505c948a3a5568ad3d6e8/src/TrueLayer/PaymentsProviders/IPaymentsProvidersApi.cs/#L9" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
