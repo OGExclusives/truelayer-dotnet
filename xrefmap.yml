@@ -1200,58 +1200,121 @@ references:
   commentId: T:TrueLayer.Payments.Model.CreatePaymentResponse
   fullName: TrueLayer.Payments.Model.CreatePaymentResponse
   nameWithType: CreatePaymentResponse
-- uid: TrueLayer.Payments.Model.CreatePaymentResponse.#ctor(System.String,System.String,TrueLayer.Payments.Model.PaymentUserResponse)
-  name: CreatePaymentResponse(String, String, PaymentUserResponse)
-  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.html#TrueLayer_Payments_Model_CreatePaymentResponse__ctor_System_String_System_String_TrueLayer_Payments_Model_PaymentUserResponse_
-  commentId: M:TrueLayer.Payments.Model.CreatePaymentResponse.#ctor(System.String,System.String,TrueLayer.Payments.Model.PaymentUserResponse)
-  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.CreatePaymentResponse(System.String, System.String, TrueLayer.Payments.Model.PaymentUserResponse)
-  nameWithType: CreatePaymentResponse.CreatePaymentResponse(String, String, PaymentUserResponse)
-- uid: TrueLayer.Payments.Model.CreatePaymentResponse.#ctor*
-  name: CreatePaymentResponse
-  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.html#TrueLayer_Payments_Model_CreatePaymentResponse__ctor_
-  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.#ctor
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.AuthorizationRequired
+  name: CreatePaymentResponse.AuthorizationRequired
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.AuthorizationRequired.html
+  commentId: T:TrueLayer.Payments.Model.CreatePaymentResponse.AuthorizationRequired
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.AuthorizationRequired
+  nameWithType: CreatePaymentResponse.AuthorizationRequired
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Authorized
+  name: CreatePaymentResponse.Authorized
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.Authorized.html
+  commentId: T:TrueLayer.Payments.Model.CreatePaymentResponse.Authorized
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Authorized
+  nameWithType: CreatePaymentResponse.Authorized
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Failed
+  name: CreatePaymentResponse.Failed
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.Failed.html
+  commentId: T:TrueLayer.Payments.Model.CreatePaymentResponse.Failed
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Failed
+  nameWithType: CreatePaymentResponse.Failed
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.#ctor(System.String,System.String)
+  name: Failed(String, String)
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.Failed.html#TrueLayer_Payments_Model_CreatePaymentResponse_Failed__ctor_System_String_System_String_
+  commentId: M:TrueLayer.Payments.Model.CreatePaymentResponse.Failed.#ctor(System.String,System.String)
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.Failed(System.String, System.String)
+  nameWithType: CreatePaymentResponse.Failed.Failed(String, String)
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.#ctor*
+  name: Failed
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.Failed.html#TrueLayer_Payments_Model_CreatePaymentResponse_Failed__ctor_
+  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.Failed.#ctor
   isSpec: "True"
-  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.CreatePaymentResponse
-  nameWithType: CreatePaymentResponse.CreatePaymentResponse
-- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Id
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.Failed
+  nameWithType: CreatePaymentResponse.Failed.Failed
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureReason
+  name: FailureReason
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.Failed.html#TrueLayer_Payments_Model_CreatePaymentResponse_Failed_FailureReason
+  commentId: P:TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureReason
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureReason
+  nameWithType: CreatePaymentResponse.Failed.FailureReason
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureReason*
+  name: FailureReason
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.Failed.html#TrueLayer_Payments_Model_CreatePaymentResponse_Failed_FailureReason_
+  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureReason
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureReason
+  nameWithType: CreatePaymentResponse.Failed.FailureReason
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureStage
+  name: FailureStage
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.Failed.html#TrueLayer_Payments_Model_CreatePaymentResponse_Failed_FailureStage
+  commentId: P:TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureStage
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureStage
+  nameWithType: CreatePaymentResponse.Failed.FailureStage
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureStage*
+  name: FailureStage
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.Failed.html#TrueLayer_Payments_Model_CreatePaymentResponse_Failed_FailureStage_
+  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureStage
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Failed.FailureStage
+  nameWithType: CreatePaymentResponse.Failed.FailureStage
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails
+  name: CreatePaymentResponse.PaymentDetails
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html
+  commentId: T:TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails
+  nameWithType: CreatePaymentResponse.PaymentDetails
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Id
   name: Id
-  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.html#TrueLayer_Payments_Model_CreatePaymentResponse_Id
-  commentId: P:TrueLayer.Payments.Model.CreatePaymentResponse.Id
-  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Id
-  nameWithType: CreatePaymentResponse.Id
-- uid: TrueLayer.Payments.Model.CreatePaymentResponse.Id*
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html#TrueLayer_Payments_Model_CreatePaymentResponse_PaymentDetails_Id
+  commentId: P:TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Id
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Id
+  nameWithType: CreatePaymentResponse.PaymentDetails.Id
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Id*
   name: Id
-  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.html#TrueLayer_Payments_Model_CreatePaymentResponse_Id_
-  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.Id
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html#TrueLayer_Payments_Model_CreatePaymentResponse_PaymentDetails_Id_
+  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Id
   isSpec: "True"
-  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.Id
-  nameWithType: CreatePaymentResponse.Id
-- uid: TrueLayer.Payments.Model.CreatePaymentResponse.ResourceToken
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Id
+  nameWithType: CreatePaymentResponse.PaymentDetails.Id
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.ResourceToken
   name: ResourceToken
-  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.html#TrueLayer_Payments_Model_CreatePaymentResponse_ResourceToken
-  commentId: P:TrueLayer.Payments.Model.CreatePaymentResponse.ResourceToken
-  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.ResourceToken
-  nameWithType: CreatePaymentResponse.ResourceToken
-- uid: TrueLayer.Payments.Model.CreatePaymentResponse.ResourceToken*
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html#TrueLayer_Payments_Model_CreatePaymentResponse_PaymentDetails_ResourceToken
+  commentId: P:TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.ResourceToken
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.ResourceToken
+  nameWithType: CreatePaymentResponse.PaymentDetails.ResourceToken
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.ResourceToken*
   name: ResourceToken
-  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.html#TrueLayer_Payments_Model_CreatePaymentResponse_ResourceToken_
-  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.ResourceToken
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html#TrueLayer_Payments_Model_CreatePaymentResponse_PaymentDetails_ResourceToken_
+  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.ResourceToken
   isSpec: "True"
-  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.ResourceToken
-  nameWithType: CreatePaymentResponse.ResourceToken
-- uid: TrueLayer.Payments.Model.CreatePaymentResponse.User
-  name: User
-  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.html#TrueLayer_Payments_Model_CreatePaymentResponse_User
-  commentId: P:TrueLayer.Payments.Model.CreatePaymentResponse.User
-  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.User
-  nameWithType: CreatePaymentResponse.User
-- uid: TrueLayer.Payments.Model.CreatePaymentResponse.User*
-  name: User
-  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.html#TrueLayer_Payments_Model_CreatePaymentResponse_User_
-  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.User
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.ResourceToken
+  nameWithType: CreatePaymentResponse.PaymentDetails.ResourceToken
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Status
+  name: Status
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html#TrueLayer_Payments_Model_CreatePaymentResponse_PaymentDetails_Status
+  commentId: P:TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Status
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Status
+  nameWithType: CreatePaymentResponse.PaymentDetails.Status
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Status*
+  name: Status
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html#TrueLayer_Payments_Model_CreatePaymentResponse_PaymentDetails_Status_
+  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Status
   isSpec: "True"
-  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.User
-  nameWithType: CreatePaymentResponse.User
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.Status
+  nameWithType: CreatePaymentResponse.PaymentDetails.Status
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.User
+  name: User
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html#TrueLayer_Payments_Model_CreatePaymentResponse_PaymentDetails_User
+  commentId: P:TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.User
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.User
+  nameWithType: CreatePaymentResponse.PaymentDetails.User
+- uid: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.User*
+  name: User
+  href: api/TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html#TrueLayer_Payments_Model_CreatePaymentResponse_PaymentDetails_User_
+  commentId: Overload:TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.User
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.User
+  nameWithType: CreatePaymentResponse.PaymentDetails.User
 - uid: TrueLayer.Payments.Model.GetPaymentResponse
   name: GetPaymentResponse
   href: api/TrueLayer.Payments.Model.GetPaymentResponse.html

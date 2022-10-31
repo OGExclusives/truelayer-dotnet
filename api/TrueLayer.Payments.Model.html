@@ -114,7 +114,19 @@
       <section><p>Represents a request for payment</p>
 </section>
       <h4><a class="xref" href="TrueLayer.Payments.Model.CreatePaymentResponse.html">CreatePaymentResponse</a></h4>
-      <section><p>Create Payment Response type</p>
+      <section><p>Create Payment Response Types</p>
+</section>
+      <h4><a class="xref" href="TrueLayer.Payments.Model.CreatePaymentResponse.AuthorizationRequired.html">CreatePaymentResponse.AuthorizationRequired</a></h4>
+      <section><p>Represents a payment that requires further authorization</p>
+</section>
+      <h4><a class="xref" href="TrueLayer.Payments.Model.CreatePaymentResponse.Authorized.html">CreatePaymentResponse.Authorized</a></h4>
+      <section><p>Represents a payment that has been authorized by the end user</p>
+</section>
+      <h4><a class="xref" href="TrueLayer.Payments.Model.CreatePaymentResponse.Failed.html">CreatePaymentResponse.Failed</a></h4>
+      <section><p>Represents a payment that failed to complete. This is a terminal state.</p>
+</section>
+      <h4><a class="xref" href="TrueLayer.Payments.Model.CreatePaymentResponse.PaymentDetails.html">CreatePaymentResponse.PaymentDetails</a></h4>
+      <section><p>Base class containing common properties for all payment states</p>
 </section>
       <h4><a class="xref" href="TrueLayer.Payments.Model.GetPaymentResponse.html">GetPaymentResponse</a></h4>
       <section><p>Get Payment Response Types</p>
@@ -130,17 +142,17 @@
 </section>
       <h4><a class="xref" href="TrueLayer.Payments.Model.GetPaymentResponse.Executed.html">GetPaymentResponse.Executed</a></h4>
       <section><p>Represents a payment that has been executed
-For open loop payments this state is terminate. For closed-loop payments, wait for Settled.</p>
+For open loop payments this state is terminal. For closed-loop payments, wait for Settled.</p>
 </section>
       <h4><a class="xref" href="TrueLayer.Payments.Model.GetPaymentResponse.Failed.html">GetPaymentResponse.Failed</a></h4>
-      <section><p>Represents an authorized payment that failed to complete. This is a terminate state.</p>
+      <section><p>Represents a payment that failed to complete. This is a terminal state.</p>
 </section>
       <h4><a class="xref" href="TrueLayer.Payments.Model.GetPaymentResponse.PaymentDetails.html">GetPaymentResponse.PaymentDetails</a></h4>
       <section><p>Base class containing common properties for all payment states</p>
 </section>
       <h4><a class="xref" href="TrueLayer.Payments.Model.GetPaymentResponse.Settled.html">GetPaymentResponse.Settled</a></h4>
       <section><p>Represents a payment that has settled
-This is a terminate state for closed-loop payments.</p>
+This is a terminal state for closed-loop payments.</p>
 </section>
       <h4><a class="xref" href="TrueLayer.Payments.Model.PaymentMethod.html">PaymentMethod</a></h4>
       <section><p>Payment Method types</p>
