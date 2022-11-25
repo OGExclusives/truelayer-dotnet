@@ -1107,6 +1107,19 @@ references:
   isSpec: "True"
   fullName: TrueLayer.Payments.Model.Beneficiary.MerchantAccount.MerchantAccountId
   nameWithType: Beneficiary.MerchantAccount.MerchantAccountId
+- uid: TrueLayer.Payments.Model.Beneficiary.MerchantAccount.Reference
+  name: Reference
+  href: api/TrueLayer.Payments.Model.Beneficiary.MerchantAccount.html#TrueLayer_Payments_Model_Beneficiary_MerchantAccount_Reference
+  commentId: P:TrueLayer.Payments.Model.Beneficiary.MerchantAccount.Reference
+  fullName: TrueLayer.Payments.Model.Beneficiary.MerchantAccount.Reference
+  nameWithType: Beneficiary.MerchantAccount.Reference
+- uid: TrueLayer.Payments.Model.Beneficiary.MerchantAccount.Reference*
+  name: Reference
+  href: api/TrueLayer.Payments.Model.Beneficiary.MerchantAccount.html#TrueLayer_Payments_Model_Beneficiary_MerchantAccount_Reference_
+  commentId: Overload:TrueLayer.Payments.Model.Beneficiary.MerchantAccount.Reference
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Beneficiary.MerchantAccount.Reference
+  nameWithType: Beneficiary.MerchantAccount.Reference
 - uid: TrueLayer.Payments.Model.Beneficiary.MerchantAccount.Type
   name: Type
   href: api/TrueLayer.Payments.Model.Beneficiary.MerchantAccount.html#TrueLayer_Payments_Model_Beneficiary_MerchantAccount_Type
