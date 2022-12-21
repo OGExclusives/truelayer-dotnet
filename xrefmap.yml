@@ -339,6 +339,18 @@ references:
   commentId: F:TrueLayer.Currencies.GBP
   fullName: TrueLayer.Currencies.GBP
   nameWithType: Currencies.GBP
+- uid: TrueLayer.Currencies.NOK
+  name: NOK
+  href: api/TrueLayer.Currencies.html#TrueLayer_Currencies_NOK
+  commentId: F:TrueLayer.Currencies.NOK
+  fullName: TrueLayer.Currencies.NOK
+  nameWithType: Currencies.NOK
+- uid: TrueLayer.Currencies.PLN
+  name: PLN
+  href: api/TrueLayer.Currencies.html#TrueLayer_Currencies_PLN
+  commentId: F:TrueLayer.Currencies.PLN
+  fullName: TrueLayer.Currencies.PLN
+  nameWithType: Currencies.PLN
 - uid: TrueLayer.CurrencyExtensions
   name: CurrencyExtensions
   href: api/TrueLayer.CurrencyExtensions.html
@@ -994,15 +1006,15 @@ references:
   commentId: T:TrueLayer.Payments.Model.Beneficiary.ExternalAccount
   fullName: TrueLayer.Payments.Model.Beneficiary.ExternalAccount
   nameWithType: Beneficiary.ExternalAccount
-- uid: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor(System.String,System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban})
-  name: ExternalAccount(String, String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban>)
-  href: api/TrueLayer.Payments.Model.Beneficiary.ExternalAccount.html#TrueLayer_Payments_Model_Beneficiary_ExternalAccount__ctor_System_String_System_String_OneOf_TrueLayer_Payments_Model_AccountIdentifier_SortCodeAccountNumber_TrueLayer_Payments_Model_AccountIdentifier_Iban__
-  commentId: M:TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor(System.String,System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban})
-  name.vb: ExternalAccount(String, String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban))
-  fullName: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.ExternalAccount(System.String, System.String, OneOf<TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban>)
-  fullName.vb: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.ExternalAccount(System.String, System.String, OneOf(Of TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban))
-  nameWithType: Beneficiary.ExternalAccount.ExternalAccount(String, String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban>)
-  nameWithType.vb: Beneficiary.ExternalAccount.ExternalAccount(String, String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban))
+- uid: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor(System.String,System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban,TrueLayer.Payments.Model.AccountIdentifier.Bban,TrueLayer.Payments.Model.AccountIdentifier.Nrb})
+  name: ExternalAccount(String, String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban, AccountIdentifier.Bban, AccountIdentifier.Nrb>)
+  href: api/TrueLayer.Payments.Model.Beneficiary.ExternalAccount.html#TrueLayer_Payments_Model_Beneficiary_ExternalAccount__ctor_System_String_System_String_OneOf_TrueLayer_Payments_Model_AccountIdentifier_SortCodeAccountNumber_TrueLayer_Payments_Model_AccountIdentifier_Iban_TrueLayer_Payments_Model_AccountIdentifier_Bban_TrueLayer_Payments_Model_AccountIdentifier_Nrb__
+  commentId: M:TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor(System.String,System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban,TrueLayer.Payments.Model.AccountIdentifier.Bban,TrueLayer.Payments.Model.AccountIdentifier.Nrb})
+  name.vb: ExternalAccount(String, String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban, AccountIdentifier.Bban, AccountIdentifier.Nrb))
+  fullName: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.ExternalAccount(System.String, System.String, OneOf<TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban, TrueLayer.Payments.Model.AccountIdentifier.Bban, TrueLayer.Payments.Model.AccountIdentifier.Nrb>)
+  fullName.vb: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.ExternalAccount(System.String, System.String, OneOf(Of TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban, TrueLayer.Payments.Model.AccountIdentifier.Bban, TrueLayer.Payments.Model.AccountIdentifier.Nrb))
+  nameWithType: Beneficiary.ExternalAccount.ExternalAccount(String, String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban, AccountIdentifier.Bban, AccountIdentifier.Nrb>)
+  nameWithType.vb: Beneficiary.ExternalAccount.ExternalAccount(String, String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban, AccountIdentifier.Bban, AccountIdentifier.Nrb))
 - uid: TrueLayer.Payments.Model.Beneficiary.ExternalAccount.#ctor*
   name: ExternalAccount
   href: api/TrueLayer.Payments.Model.Beneficiary.ExternalAccount.html#TrueLayer_Payments_Model_Beneficiary_ExternalAccount__ctor_
@@ -2145,15 +2157,15 @@ references:
   commentId: T:TrueLayer.Payments.Model.RemitterAccount
   fullName: TrueLayer.Payments.Model.RemitterAccount
   nameWithType: RemitterAccount
-- uid: TrueLayer.Payments.Model.RemitterAccount.#ctor(System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban})
-  name: RemitterAccount(String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban>)
-  href: api/TrueLayer.Payments.Model.RemitterAccount.html#TrueLayer_Payments_Model_RemitterAccount__ctor_System_String_OneOf_TrueLayer_Payments_Model_AccountIdentifier_SortCodeAccountNumber_TrueLayer_Payments_Model_AccountIdentifier_Iban__
-  commentId: M:TrueLayer.Payments.Model.RemitterAccount.#ctor(System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban})
-  name.vb: RemitterAccount(String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban))
-  fullName: TrueLayer.Payments.Model.RemitterAccount.RemitterAccount(System.String, OneOf<TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban>)
-  fullName.vb: TrueLayer.Payments.Model.RemitterAccount.RemitterAccount(System.String, OneOf(Of TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban))
-  nameWithType: RemitterAccount.RemitterAccount(String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban>)
-  nameWithType.vb: RemitterAccount.RemitterAccount(String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban))
+- uid: TrueLayer.Payments.Model.RemitterAccount.#ctor(System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban,TrueLayer.Payments.Model.AccountIdentifier.Bban,TrueLayer.Payments.Model.AccountIdentifier.Nrb})
+  name: RemitterAccount(String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban, AccountIdentifier.Bban, AccountIdentifier.Nrb>)
+  href: api/TrueLayer.Payments.Model.RemitterAccount.html#TrueLayer_Payments_Model_RemitterAccount__ctor_System_String_OneOf_TrueLayer_Payments_Model_AccountIdentifier_SortCodeAccountNumber_TrueLayer_Payments_Model_AccountIdentifier_Iban_TrueLayer_Payments_Model_AccountIdentifier_Bban_TrueLayer_Payments_Model_AccountIdentifier_Nrb__
+  commentId: M:TrueLayer.Payments.Model.RemitterAccount.#ctor(System.String,OneOf{TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber,TrueLayer.Payments.Model.AccountIdentifier.Iban,TrueLayer.Payments.Model.AccountIdentifier.Bban,TrueLayer.Payments.Model.AccountIdentifier.Nrb})
+  name.vb: RemitterAccount(String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban, AccountIdentifier.Bban, AccountIdentifier.Nrb))
+  fullName: TrueLayer.Payments.Model.RemitterAccount.RemitterAccount(System.String, OneOf<TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban, TrueLayer.Payments.Model.AccountIdentifier.Bban, TrueLayer.Payments.Model.AccountIdentifier.Nrb>)
+  fullName.vb: TrueLayer.Payments.Model.RemitterAccount.RemitterAccount(System.String, OneOf(Of TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber, TrueLayer.Payments.Model.AccountIdentifier.Iban, TrueLayer.Payments.Model.AccountIdentifier.Bban, TrueLayer.Payments.Model.AccountIdentifier.Nrb))
+  nameWithType: RemitterAccount.RemitterAccount(String, OneOf<AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban, AccountIdentifier.Bban, AccountIdentifier.Nrb>)
+  nameWithType.vb: RemitterAccount.RemitterAccount(String, OneOf(Of AccountIdentifier.SortCodeAccountNumber, AccountIdentifier.Iban, AccountIdentifier.Bban, AccountIdentifier.Nrb))
 - uid: TrueLayer.Payments.Model.RemitterAccount.#ctor*
   name: RemitterAccount
   href: api/TrueLayer.Payments.Model.RemitterAccount.html#TrueLayer_Payments_Model_RemitterAccount__ctor_
