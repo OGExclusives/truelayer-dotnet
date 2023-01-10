@@ -1743,15 +1743,12 @@ references:
   commentId: T:TrueLayer.Payments.Model.PaymentUser
   fullName: TrueLayer.Payments.Model.PaymentUser
   nameWithType: PaymentUser
-- uid: TrueLayer.Payments.Model.PaymentUser.#ctor(System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String})
-  name: PaymentUser(String, Nullable<String>, Nullable<String>, Nullable<String>)
-  href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser__ctor_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__
-  commentId: M:TrueLayer.Payments.Model.PaymentUser.#ctor(System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String})
-  name.vb: PaymentUser(String, Nullable(Of String), Nullable(Of String), Nullable(Of String))
-  fullName: TrueLayer.Payments.Model.PaymentUser.PaymentUser(System.String, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.String>)
-  fullName.vb: TrueLayer.Payments.Model.PaymentUser.PaymentUser(System.String, System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.String))
-  nameWithType: PaymentUser.PaymentUser(String, Nullable<String>, Nullable<String>, Nullable<String>)
-  nameWithType.vb: PaymentUser.PaymentUser(String, Nullable(Of String), Nullable(Of String), Nullable(Of String))
+- uid: TrueLayer.Payments.Model.PaymentUser.#ctor(System.String)
+  name: PaymentUser(String)
+  href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser__ctor_System_String_
+  commentId: M:TrueLayer.Payments.Model.PaymentUser.#ctor(System.String)
+  fullName: TrueLayer.Payments.Model.PaymentUser.PaymentUser(System.String)
+  nameWithType: PaymentUser.PaymentUser(String)
 - uid: TrueLayer.Payments.Model.PaymentUser.#ctor*
   name: PaymentUser
   href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser__ctor_
@@ -1759,19 +1756,6 @@ references:
   isSpec: "True"
   fullName: TrueLayer.Payments.Model.PaymentUser.PaymentUser
   nameWithType: PaymentUser.PaymentUser
-- uid: TrueLayer.Payments.Model.PaymentUser.Email
-  name: Email
-  href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser_Email
-  commentId: P:TrueLayer.Payments.Model.PaymentUser.Email
-  fullName: TrueLayer.Payments.Model.PaymentUser.Email
-  nameWithType: PaymentUser.Email
-- uid: TrueLayer.Payments.Model.PaymentUser.Email*
-  name: Email
-  href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser_Email_
-  commentId: Overload:TrueLayer.Payments.Model.PaymentUser.Email
-  isSpec: "True"
-  fullName: TrueLayer.Payments.Model.PaymentUser.Email
-  nameWithType: PaymentUser.Email
 - uid: TrueLayer.Payments.Model.PaymentUser.Id
   name: Id
   href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser_Id
@@ -1785,32 +1769,6 @@ references:
   isSpec: "True"
   fullName: TrueLayer.Payments.Model.PaymentUser.Id
   nameWithType: PaymentUser.Id
-- uid: TrueLayer.Payments.Model.PaymentUser.Name
-  name: Name
-  href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser_Name
-  commentId: P:TrueLayer.Payments.Model.PaymentUser.Name
-  fullName: TrueLayer.Payments.Model.PaymentUser.Name
-  nameWithType: PaymentUser.Name
-- uid: TrueLayer.Payments.Model.PaymentUser.Name*
-  name: Name
-  href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser_Name_
-  commentId: Overload:TrueLayer.Payments.Model.PaymentUser.Name
-  isSpec: "True"
-  fullName: TrueLayer.Payments.Model.PaymentUser.Name
-  nameWithType: PaymentUser.Name
-- uid: TrueLayer.Payments.Model.PaymentUser.Phone
-  name: Phone
-  href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser_Phone
-  commentId: P:TrueLayer.Payments.Model.PaymentUser.Phone
-  fullName: TrueLayer.Payments.Model.PaymentUser.Phone
-  nameWithType: PaymentUser.Phone
-- uid: TrueLayer.Payments.Model.PaymentUser.Phone*
-  name: Phone
-  href: api/TrueLayer.Payments.Model.PaymentUser.html#TrueLayer_Payments_Model_PaymentUser_Phone_
-  commentId: Overload:TrueLayer.Payments.Model.PaymentUser.Phone
-  isSpec: "True"
-  fullName: TrueLayer.Payments.Model.PaymentUser.Phone
-  nameWithType: PaymentUser.Phone
 - uid: TrueLayer.Payments.Model.PaymentUserRequest
   name: PaymentUserRequest
   href: api/TrueLayer.Payments.Model.PaymentUserRequest.html
