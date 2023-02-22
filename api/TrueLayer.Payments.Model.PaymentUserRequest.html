@@ -105,19 +105,19 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/07059aa451a71664c04ae26dfbb8da40bb6f715e/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.%23ctor(System.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_DateTime__TrueLayer_Payments_Model_Address_.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.%23ctor(System.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BDateTime%7D%2CTrueLayer.Payments.Model.Address)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/07059aa451a71664c04ae26dfbb8da40bb6f715e/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L14">View Source</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L20">View Source</a>
   </span>
   <a id="TrueLayer_Payments_Model_PaymentUserRequest__ctor_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.#ctor*"></a>
-  <h4 id="TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String})">PaymentUserRequest(Nullable&lt;String&gt;, Nullable&lt;String&gt;, Nullable&lt;String&gt;)</h4>
+  <h4 id="TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_DateTime__TrueLayer_Payments_Model_Address_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{DateTime},TrueLayer.Payments.Model.Address)">PaymentUserRequest(Nullable&lt;String&gt;, Nullable&lt;String&gt;, Nullable&lt;String&gt;, Nullable&lt;DateTime&gt;, Address)</h4>
   <div class="markdown level1 summary"><p>Creates a payment user.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PaymentUserRequest(string? name = null, string? email = null, string? phone = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public PaymentUserRequest(string? name = null, string? email = null, string? phone = null, DateTime? dateOfBirth = null, Address address = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -147,23 +147,35 @@
         <td><p>The user's phone number.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTime</span>&gt;</td>
+        <td><span class="parametername">dateOfBirth</span></td>
+        <td><p>The user's date of birth</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TrueLayer.Payments.Model.Address.html">Address</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>The user's physical address</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/07059aa451a71664c04ae26dfbb8da40bb6f715e/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.%23ctor(System.String%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_DateTime__TrueLayer_Payments_Model_Address_.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.%23ctor(System.String%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BSystem.String%7D%2CSystem.Nullable%7BDateTime%7D%2CTrueLayer.Payments.Model.Address)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/07059aa451a71664c04ae26dfbb8da40bb6f715e/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L28">View Source</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L44">View Source</a>
   </span>
   <a id="TrueLayer_Payments_Model_PaymentUserRequest__ctor_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.#ctor*"></a>
-  <h4 id="TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String})">PaymentUserRequest(String, Nullable&lt;String&gt;, Nullable&lt;String&gt;, Nullable&lt;String&gt;)</h4>
+  <h4 id="TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_DateTime__TrueLayer_Payments_Model_Address_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{DateTime},TrueLayer.Payments.Model.Address)">PaymentUserRequest(String, Nullable&lt;String&gt;, Nullable&lt;String&gt;, Nullable&lt;String&gt;, Nullable&lt;DateTime&gt;, Address)</h4>
   <div class="markdown level1 summary"><p>Creates a payment user using an existing identifier.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public PaymentUserRequest(string id, string? name = null, string? email = null, string? phone = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public PaymentUserRequest(string id, string? name = null, string? email = null, string? phone = null, DateTime? dateOfBirth = null, Address address = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -199,16 +211,90 @@
         <td><p>The user's phone number.</p>
 </td>
       </tr>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTime</span>&gt;</td>
+        <td><span class="parametername">dateOfBirth</span></td>
+        <td><p>The user's date of birth</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="TrueLayer.Payments.Model.Address.html">Address</a></td>
+        <td><span class="parametername">address</span></td>
+        <td><p>The user's physical address</p>
+</td>
+      </tr>
     </tbody>
   </table>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/07059aa451a71664c04ae26dfbb8da40bb6f715e/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_Email.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.Email%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_Address.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.Address%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/07059aa451a71664c04ae26dfbb8da40bb6f715e/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L49">View Source</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L89">View Source</a>
+  </span>
+  <a id="TrueLayer_Payments_Model_PaymentUserRequest_Address_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Address*"></a>
+  <h4 id="TrueLayer_Payments_Model_PaymentUserRequest_Address" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Address">Address</h4>
+  <div class="markdown level1 summary"><p>Gets the user's physical address</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Address Address { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TrueLayer.Payments.Model.Address.html">Address</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_DateOfBirth.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.DateOfBirth%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L83">View Source</a>
+  </span>
+  <a id="TrueLayer_Payments_Model_PaymentUserRequest_DateOfBirth_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.DateOfBirth*"></a>
+  <h4 id="TrueLayer_Payments_Model_PaymentUserRequest_DateOfBirth" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.DateOfBirth">DateOfBirth</h4>
+  <div class="markdown level1 summary"><p>Gets the user's date of birth.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime? DateOfBirth { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.nullable-1">Nullable</a>&lt;<span class="xref">DateTime</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_Email.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.Email%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L73">View Source</a>
   </span>
   <a id="TrueLayer_Payments_Model_PaymentUserRequest_Email_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Email*"></a>
   <h4 id="TrueLayer_Payments_Model_PaymentUserRequest_Email" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Email">Email</h4>
@@ -236,10 +322,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/07059aa451a71664c04ae26dfbb8da40bb6f715e/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_Id.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_Id.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.Id%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/07059aa451a71664c04ae26dfbb8da40bb6f715e/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L39">View Source</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L63">View Source</a>
   </span>
   <a id="TrueLayer_Payments_Model_PaymentUserRequest_Id_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Id*"></a>
   <h4 id="TrueLayer_Payments_Model_PaymentUserRequest_Id" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Id">Id</h4>
@@ -267,10 +353,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/07059aa451a71664c04ae26dfbb8da40bb6f715e/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_Name.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_Name.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/07059aa451a71664c04ae26dfbb8da40bb6f715e/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L44">View Source</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L68">View Source</a>
   </span>
   <a id="TrueLayer_Payments_Model_PaymentUserRequest_Name_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Name*"></a>
   <h4 id="TrueLayer_Payments_Model_PaymentUserRequest_Name" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Name">Name</h4>
@@ -298,10 +384,10 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/07059aa451a71664c04ae26dfbb8da40bb6f715e/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_Phone.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.Phone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest_Phone.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest.Phone%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/07059aa451a71664c04ae26dfbb8da40bb6f715e/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L54">View Source</a>
+    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L78">View Source</a>
   </span>
   <a id="TrueLayer_Payments_Model_PaymentUserRequest_Phone_" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Phone*"></a>
   <h4 id="TrueLayer_Payments_Model_PaymentUserRequest_Phone" data-uid="TrueLayer.Payments.Model.PaymentUserRequest.Phone">Phone</h4>
@@ -339,10 +425,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/07059aa451a71664c04ae26dfbb8da40bb6f715e/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/TrueLayer/truelayer-dotnet/new/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/apiSpec/new?filename=TrueLayer_Payments_Model_PaymentUserRequest.md&amp;value=---%0Auid%3A%20TrueLayer.Payments.Model.PaymentUserRequest%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/07059aa451a71664c04ae26dfbb8da40bb6f715e/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/TrueLayer/truelayer-dotnet/blob/4d82abc287e0ed7cbabd1c57810a5e5ebac2c295/src/TrueLayer/Payments/Model/PaymentUserRequest.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

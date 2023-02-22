@@ -994,6 +994,106 @@ references:
   isSpec: "True"
   fullName: TrueLayer.Payments.Model.AccountIdentifier.SortCodeAccountNumber.Type
   nameWithType: AccountIdentifier.SortCodeAccountNumber.Type
+- uid: TrueLayer.Payments.Model.Address
+  name: Address
+  href: api/TrueLayer.Payments.Model.Address.html
+  commentId: T:TrueLayer.Payments.Model.Address
+  fullName: TrueLayer.Payments.Model.Address
+  nameWithType: Address
+- uid: TrueLayer.Payments.Model.Address.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.String})
+  name: Address(String, String, String, String, String, Nullable<String>)
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address__ctor_System_String_System_String_System_String_System_String_System_String_System_Nullable_System_String__
+  commentId: M:TrueLayer.Payments.Model.Address.#ctor(System.String,System.String,System.String,System.String,System.String,System.Nullable{System.String})
+  name.vb: Address(String, String, String, String, String, Nullable(Of String))
+  fullName: TrueLayer.Payments.Model.Address.Address(System.String, System.String, System.String, System.String, System.String, System.Nullable<System.String>)
+  fullName.vb: TrueLayer.Payments.Model.Address.Address(System.String, System.String, System.String, System.String, System.String, System.Nullable(Of System.String))
+  nameWithType: Address.Address(String, String, String, String, String, Nullable<String>)
+  nameWithType.vb: Address.Address(String, String, String, String, String, Nullable(Of String))
+- uid: TrueLayer.Payments.Model.Address.#ctor*
+  name: Address
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address__ctor_
+  commentId: Overload:TrueLayer.Payments.Model.Address.#ctor
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Address.Address
+  nameWithType: Address.Address
+- uid: TrueLayer.Payments.Model.Address.AddressLine1
+  name: AddressLine1
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_AddressLine1
+  commentId: P:TrueLayer.Payments.Model.Address.AddressLine1
+  fullName: TrueLayer.Payments.Model.Address.AddressLine1
+  nameWithType: Address.AddressLine1
+- uid: TrueLayer.Payments.Model.Address.AddressLine1*
+  name: AddressLine1
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_AddressLine1_
+  commentId: Overload:TrueLayer.Payments.Model.Address.AddressLine1
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Address.AddressLine1
+  nameWithType: Address.AddressLine1
+- uid: TrueLayer.Payments.Model.Address.AddressLine2
+  name: AddressLine2
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_AddressLine2
+  commentId: P:TrueLayer.Payments.Model.Address.AddressLine2
+  fullName: TrueLayer.Payments.Model.Address.AddressLine2
+  nameWithType: Address.AddressLine2
+- uid: TrueLayer.Payments.Model.Address.AddressLine2*
+  name: AddressLine2
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_AddressLine2_
+  commentId: Overload:TrueLayer.Payments.Model.Address.AddressLine2
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Address.AddressLine2
+  nameWithType: Address.AddressLine2
+- uid: TrueLayer.Payments.Model.Address.City
+  name: City
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_City
+  commentId: P:TrueLayer.Payments.Model.Address.City
+  fullName: TrueLayer.Payments.Model.Address.City
+  nameWithType: Address.City
+- uid: TrueLayer.Payments.Model.Address.City*
+  name: City
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_City_
+  commentId: Overload:TrueLayer.Payments.Model.Address.City
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Address.City
+  nameWithType: Address.City
+- uid: TrueLayer.Payments.Model.Address.CountryCode
+  name: CountryCode
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_CountryCode
+  commentId: P:TrueLayer.Payments.Model.Address.CountryCode
+  fullName: TrueLayer.Payments.Model.Address.CountryCode
+  nameWithType: Address.CountryCode
+- uid: TrueLayer.Payments.Model.Address.CountryCode*
+  name: CountryCode
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_CountryCode_
+  commentId: Overload:TrueLayer.Payments.Model.Address.CountryCode
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Address.CountryCode
+  nameWithType: Address.CountryCode
+- uid: TrueLayer.Payments.Model.Address.State
+  name: State
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_State
+  commentId: P:TrueLayer.Payments.Model.Address.State
+  fullName: TrueLayer.Payments.Model.Address.State
+  nameWithType: Address.State
+- uid: TrueLayer.Payments.Model.Address.State*
+  name: State
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_State_
+  commentId: Overload:TrueLayer.Payments.Model.Address.State
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Address.State
+  nameWithType: Address.State
+- uid: TrueLayer.Payments.Model.Address.Zip
+  name: Zip
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_Zip
+  commentId: P:TrueLayer.Payments.Model.Address.Zip
+  fullName: TrueLayer.Payments.Model.Address.Zip
+  nameWithType: Address.Zip
+- uid: TrueLayer.Payments.Model.Address.Zip*
+  name: Zip
+  href: api/TrueLayer.Payments.Model.Address.html#TrueLayer_Payments_Model_Address_Zip_
+  commentId: Overload:TrueLayer.Payments.Model.Address.Zip
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.Address.Zip
+  nameWithType: Address.Zip
 - uid: TrueLayer.Payments.Model.Beneficiary
   name: Beneficiary
   href: api/TrueLayer.Payments.Model.Beneficiary.html
@@ -1775,24 +1875,24 @@ references:
   commentId: T:TrueLayer.Payments.Model.PaymentUserRequest
   fullName: TrueLayer.Payments.Model.PaymentUserRequest
   nameWithType: PaymentUserRequest
-- uid: TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String})
-  name: PaymentUserRequest(Nullable<String>, Nullable<String>, Nullable<String>)
-  href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__
-  commentId: M:TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String})
-  name.vb: PaymentUserRequest(Nullable(Of String), Nullable(Of String), Nullable(Of String))
-  fullName: TrueLayer.Payments.Model.PaymentUserRequest.PaymentUserRequest(System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.String>)
-  fullName.vb: TrueLayer.Payments.Model.PaymentUserRequest.PaymentUserRequest(System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.String))
-  nameWithType: PaymentUserRequest.PaymentUserRequest(Nullable<String>, Nullable<String>, Nullable<String>)
-  nameWithType.vb: PaymentUserRequest.PaymentUserRequest(Nullable(Of String), Nullable(Of String), Nullable(Of String))
-- uid: TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String})
-  name: PaymentUserRequest(String, Nullable<String>, Nullable<String>, Nullable<String>)
-  href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__
-  commentId: M:TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String})
-  name.vb: PaymentUserRequest(String, Nullable(Of String), Nullable(Of String), Nullable(Of String))
-  fullName: TrueLayer.Payments.Model.PaymentUserRequest.PaymentUserRequest(System.String, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.String>)
-  fullName.vb: TrueLayer.Payments.Model.PaymentUserRequest.PaymentUserRequest(System.String, System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.String))
-  nameWithType: PaymentUserRequest.PaymentUserRequest(String, Nullable<String>, Nullable<String>, Nullable<String>)
-  nameWithType.vb: PaymentUserRequest.PaymentUserRequest(String, Nullable(Of String), Nullable(Of String), Nullable(Of String))
+- uid: TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{DateTime},TrueLayer.Payments.Model.Address)
+  name: PaymentUserRequest(Nullable<String>, Nullable<String>, Nullable<String>, Nullable<DateTime>, Address)
+  href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_DateTime__TrueLayer_Payments_Model_Address_
+  commentId: M:TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{DateTime},TrueLayer.Payments.Model.Address)
+  name.vb: PaymentUserRequest(Nullable(Of String), Nullable(Of String), Nullable(Of String), Nullable(Of DateTime), Address)
+  fullName: TrueLayer.Payments.Model.PaymentUserRequest.PaymentUserRequest(System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<DateTime>, TrueLayer.Payments.Model.Address)
+  fullName.vb: TrueLayer.Payments.Model.PaymentUserRequest.PaymentUserRequest(System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of DateTime), TrueLayer.Payments.Model.Address)
+  nameWithType: PaymentUserRequest.PaymentUserRequest(Nullable<String>, Nullable<String>, Nullable<String>, Nullable<DateTime>, Address)
+  nameWithType.vb: PaymentUserRequest.PaymentUserRequest(Nullable(Of String), Nullable(Of String), Nullable(Of String), Nullable(Of DateTime), Address)
+- uid: TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{DateTime},TrueLayer.Payments.Model.Address)
+  name: PaymentUserRequest(String, Nullable<String>, Nullable<String>, Nullable<String>, Nullable<DateTime>, Address)
+  href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest__ctor_System_String_System_Nullable_System_String__System_Nullable_System_String__System_Nullable_System_String__System_Nullable_DateTime__TrueLayer_Payments_Model_Address_
+  commentId: M:TrueLayer.Payments.Model.PaymentUserRequest.#ctor(System.String,System.Nullable{System.String},System.Nullable{System.String},System.Nullable{System.String},System.Nullable{DateTime},TrueLayer.Payments.Model.Address)
+  name.vb: PaymentUserRequest(String, Nullable(Of String), Nullable(Of String), Nullable(Of String), Nullable(Of DateTime), Address)
+  fullName: TrueLayer.Payments.Model.PaymentUserRequest.PaymentUserRequest(System.String, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<System.String>, System.Nullable<DateTime>, TrueLayer.Payments.Model.Address)
+  fullName.vb: TrueLayer.Payments.Model.PaymentUserRequest.PaymentUserRequest(System.String, System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of System.String), System.Nullable(Of DateTime), TrueLayer.Payments.Model.Address)
+  nameWithType: PaymentUserRequest.PaymentUserRequest(String, Nullable<String>, Nullable<String>, Nullable<String>, Nullable<DateTime>, Address)
+  nameWithType.vb: PaymentUserRequest.PaymentUserRequest(String, Nullable(Of String), Nullable(Of String), Nullable(Of String), Nullable(Of DateTime), Address)
 - uid: TrueLayer.Payments.Model.PaymentUserRequest.#ctor*
   name: PaymentUserRequest
   href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest__ctor_
@@ -1800,6 +1900,32 @@ references:
   isSpec: "True"
   fullName: TrueLayer.Payments.Model.PaymentUserRequest.PaymentUserRequest
   nameWithType: PaymentUserRequest.PaymentUserRequest
+- uid: TrueLayer.Payments.Model.PaymentUserRequest.Address
+  name: Address
+  href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest_Address
+  commentId: P:TrueLayer.Payments.Model.PaymentUserRequest.Address
+  fullName: TrueLayer.Payments.Model.PaymentUserRequest.Address
+  nameWithType: PaymentUserRequest.Address
+- uid: TrueLayer.Payments.Model.PaymentUserRequest.Address*
+  name: Address
+  href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest_Address_
+  commentId: Overload:TrueLayer.Payments.Model.PaymentUserRequest.Address
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.PaymentUserRequest.Address
+  nameWithType: PaymentUserRequest.Address
+- uid: TrueLayer.Payments.Model.PaymentUserRequest.DateOfBirth
+  name: DateOfBirth
+  href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest_DateOfBirth
+  commentId: P:TrueLayer.Payments.Model.PaymentUserRequest.DateOfBirth
+  fullName: TrueLayer.Payments.Model.PaymentUserRequest.DateOfBirth
+  nameWithType: PaymentUserRequest.DateOfBirth
+- uid: TrueLayer.Payments.Model.PaymentUserRequest.DateOfBirth*
+  name: DateOfBirth
+  href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest_DateOfBirth_
+  commentId: Overload:TrueLayer.Payments.Model.PaymentUserRequest.DateOfBirth
+  isSpec: "True"
+  fullName: TrueLayer.Payments.Model.PaymentUserRequest.DateOfBirth
+  nameWithType: PaymentUserRequest.DateOfBirth
 - uid: TrueLayer.Payments.Model.PaymentUserRequest.Email
   name: Email
   href: api/TrueLayer.Payments.Model.PaymentUserRequest.html#TrueLayer_Payments_Model_PaymentUserRequest_Email
