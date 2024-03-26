@@ -8,6 +8,42 @@ namespace TrueLayer.Payouts.Model
     /// </summary>
     public static class AccountIdentifier
     {
+
+/// <summary>
+        /// Defines a bank account identified by sort code and account number
+        /// </summary>
+        /// <value></value>
+        [JsonDiscriminator(SortCodeAccountNumber.Discriminator)]
+        public record SortCodeAccountNumber : IDiscriminated
+        {
+            public const string Discriminator = "sort_code_account_number";
+
+            /// <summary>
+            /// Creates a new <see cref="SortCodeAccountNumber"/> instance
+            /// </summary>
+            /// <param name="sortCode">The bank account sort code</param>
+            /// <param name="accountNumber">The bank account number</param>
+            public SortCodeAccountNumber(string sortCode, string accountNumber)
+            }
+
+            /// <summary>
+            /// Gets the scheme identifier type
+            /// </summary>
+            public string Type => Discriminator;
+
+            /// <summary>
+            /// Gets the bank account sort code
+            /// </summary>
+            public string SortCode { get; }
+
+            /// <summary>
+            /// Gets the bank account number
+            /// </summary>
+            public string AccountNumber { get; }
+        }
+
+
+        
         /// <summary>
         /// Defines a bank account identified by an IBAN
         /// </summary>
