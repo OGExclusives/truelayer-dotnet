@@ -9,31 +9,30 @@ namespace TrueLayer.Payouts.Model
     public static class AccountIdentifier
     {
 
- [JsonDiscriminator(SortCodeAccountNumber.Discriminator)]
-     public record SortCodeAccountNumber : IDiscriminated
-     {
-         public string Type => "sort_code_account_number";
-    
-         public string SortCode { get; }
-    
-         public string AccountNumber { get; }
-    
-         public const string Discriminator = "sort_code_account_number";
-    
-         public SortCodeAccountNumber(string sortCode, string accountNumber)
-         {
-             SortCode = sortCode.VerifyNotNull("sortCode");
-             AccountNumber = accountNumber.VerifyNotNull("accountNumber");
-         }
-    
-         [CompilerGenerated]
-         protected SortCodeAccountNumber(SortCodeAccountNumber original)
-         {
-             SortCode = original.SortCode;
-             AccountNumber = original.AccountNumber;
-         }
-     }
-        
+        [JsonDiscriminator(SortCodeAccountNumber.Discriminator)]
+        public record SortCodeAccountNumber : IDiscriminated
+        {
+            public string Type => "sort_code_account_number";
+
+            public string SortCode { get; }
+
+            public string AccountNumber { get; }
+
+            public const string Discriminator = "sort_code_account_number";
+
+            public SortCodeAccountNumber(string sortCode, string accountNumber)
+            {
+                SortCode = sortCode;
+                AccountNumber = accountNumber;
+            }
+
+            protected SortCodeAccountNumber(SortCodeAccountNumber original)
+            {
+                SortCode = original.SortCode;
+                AccountNumber = original.AccountNumber;
+            }
+        }
+
         /// <summary>
         /// Defines a bank account identified by an IBAN
         /// </summary>

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using Microsoft.Extensions.Configuration;
 using TrueLayer;
 
@@ -28,7 +28,7 @@ namespace Microsoft.Extensions.DependencyInjection
             if (services is null) throw new ArgumentNullException(nameof(services));
             if (configuration is null) throw new ArgumentNullException(nameof(configuration));
 
-            services.Configure<TrueLayerOptions>(options =>
+            services.Configure<TrueLayerOptions>(configurationSectionName, options =>
             {
                 configuration.GetSection(configurationSectionName).Bind(options);
                 configureOptions?.Invoke(options);
@@ -38,7 +38,7 @@ namespace Microsoft.Extensions.DependencyInjection
             IHttpClientBuilder httpClientBuilder = services.AddHttpClient<IApiClient, ApiClient>(configurationSectionName);
             configureBuilder?.Invoke(httpClientBuilder);
 
-            services.AddTransient<ITrueLayerClient, TrueLayerClient>();
+            services.AddKeyedTransient<ITrueLayerClient, TrueLayerClient>(configurationSectionName);
 
             return services;
         }
